@@ -174,4 +174,4 @@ alias createSwiftCLI='swift package init  --type executable --name'
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 
 # alias version
-alias vv='~/shellScript/show-tool-version/ShowToolVersion.sh'
+alias vv='~/dotfiles/show-tool-version/ShowToolVersion.sh'
