@@ -1,3 +1,6 @@
+cask_args appdir: "/Applications"
+
+# Tap
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
@@ -7,6 +10,7 @@ tap "skiptools/skip"
 tap "swiftwasm/tap"
 tap "xcodesorg/made"
 
+# brew
 brew "act"
 brew "bat"
 brew "chafa"
@@ -40,12 +44,14 @@ brew "xcbeautify"
 brew "xcode-build-server"
 brew "swiftwasm/tap/carton"
 
+# cask
 cask "android-platform-tools"
 cask "font-hack-nerd-font"
 cask "iterm2"
 cask "skip"
 cask "xcodes"
 
+# vscode
 vscode "dbaeumer.vscode-eslint"
 vscode "eamodio.gitlens"
 vscode "ecmel.vscode-html-css"

@@ -18,4 +18,9 @@ defaults:
 
 # Install macOS applications.
 brew:
+	chmod +x .bin/brew.sh
 	.bin/brew.sh
+
+update:
+	# chmod +x .bin/brew-cleanup.sh
+	.bin/brew-cleanup.sh
