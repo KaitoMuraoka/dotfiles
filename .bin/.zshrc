@@ -176,5 +176,8 @@ alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time
 # bat Alias
 alias cat="bat"
 
+# relogin alias
+alias relogin='exec $SHELL -l'
+
 # alias version
 alias vv='~/dotfiles/show-tool-version/ShowToolVersion.sh'
