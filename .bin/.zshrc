@@ -160,8 +160,8 @@ alias nnote="nvim ~/note/"
 alias pathcheck='echo $PATH'
 
 # note directory
-alias worknote='nvim ~/Desktop/note/work-note/'
-alias privatenote='nvim ~/Desktop/note/private/'
+alias worknote='cd ~/Desktop/note/work-note/ && nvim'
+alias privatenote='cd ~/Desktop/note/private/ && nvim'
 
 # VScode Alias
 alias cz='code ~/.zshrc && source ~/.zshrc'
