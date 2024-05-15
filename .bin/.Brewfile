@@ -43,6 +43,7 @@ brew "vapor"
 brew "xcbeautify"
 brew "xcode-build-server"
 brew "swiftwasm/tap/carton"
+brew "wget"
 
 # cask
 cask "android-platform-tools"
