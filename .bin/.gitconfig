@@ -33,6 +33,7 @@
 [alias]
   logo = "log --oneline"
   delete-merged-branch = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|main'|xargs git branch -d; };f"
+  copy-branch = "!f() { git branch --show-current | tr -d '\n' | pbcopy; echo 'Current branch name copied to clipboard.'; }; f"
 
 [init]
 	defaultBranch = main

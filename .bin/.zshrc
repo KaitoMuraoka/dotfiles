@@ -138,7 +138,7 @@ eval "$(thefuck --alias)"
 # cd したらすぐにlsしてくれる
 chpwd(){
 	if [[ $(pwd) != $HOME ]]; then;
-    eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions
+    ls
 	fi
 }
 
@@ -155,7 +155,7 @@ alias act='act --container-architecture linux/amd64'
 # NeoVim Alias
 alias nz='nvim ~/.zshrc && source ~/.zshrc'
 alias ng='nvim ~/.gitconfig && source ~/.gitconfig'
-alias nn='nvim ~/.config/nvim'
+alias nn='cd ~/.config/nvim && nvim .'
 alias nnote="nvim ~/note/"
 alias pathcheck='echo $PATH'
 
@@ -170,8 +170,17 @@ alias cg='code ~/.gitconfig && source ~/.gitconfig'
 # Create SwiftCLI(SPM)
 alias createSwiftCLI='swift package init  --type executable --name'
 
+# freeze alias
+alias freeze='freeze --show-line-numbers --window'
+
 # Eza Alias (better ls)
-alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+# alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 
 # alias version
 alias vv='~/dotfiles/show-tool-version/ShowToolVersion.sh'
+
+[[ "$TERM_PROGRAM" == "CodeEditApp_Terminal" ]] && . "/Applications/CodeEdit.app/Contents/Resources/codeedit_shell_integration.zsh"
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+
+# Created by `pipx` on 2024-06-01 13:51:03
+export PATH="$PATH:/Users/kaitomuraoka/.local/bin"
