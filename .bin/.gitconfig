@@ -6,7 +6,7 @@
   path = ~/.gitconfig_cq
 
 [core]
-	editor = vim
+	editor = nvim
 
 # git delta config
 [core]
