@@ -118,6 +118,9 @@ source $ZSH/oh-my-zsh.sh
 # nodebrew setup
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
+# fzm setup
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
 # rbenv path
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
@@ -142,6 +145,8 @@ chpwd(){
 	fi
 }
 
+# Android Studio
+export PATH=$PATH:/Applications/Android\ Studio.app/Contents/MacOS
 
 # Aliases 
 # Git
@@ -167,11 +172,17 @@ alias privatenote='cd ~/Desktop/note/private/ && nvim'
 alias cz='code ~/.zshrc && source ~/.zshrc'
 alias cg='code ~/.gitconfig && source ~/.gitconfig'
 
+# Coteditor
+alias cot="open -a /Applications/CotEditor.app"
+
 # Create SwiftCLI(SPM)
 alias createSwiftCLI='swift package init  --type executable --name'
 
 # freeze alias
 alias freeze='freeze --show-line-numbers --window'
+
+# emacs no-window
+alias emacs='emacs -nw'
 
 # Eza Alias (better ls)
 # alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
@@ -179,8 +190,24 @@ alias freeze='freeze --show-line-numbers --window'
 # alias version
 alias vv='~/dotfiles/show-tool-version/ShowToolVersion.sh'
 
+# alias move Directory
+alias imwork='cd ~/caraquri/'
+alias imdeveloper='cd ~/personalDevelop/'
+
+# flutter aliases
+alias create-mobile='create --platforms=ios,android'
+
 [[ "$TERM_PROGRAM" == "CodeEditApp_Terminal" ]] && . "/Applications/CodeEdit.app/Contents/Resources/codeedit_shell_integration.zsh"
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # Created by `pipx` on 2024-06-01 13:51:03
 export PATH="$PATH:/Users/kaitomuraoka/.local/bin"
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/kaitomuraoka/.dart-cli-completion/zsh-config.zsh ]] && . /Users/kaitomuraoka/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+## WezTerm
+PATH="$PATH:/Applications/WezTerm.app/Contents/MacOS"
+export PATH
