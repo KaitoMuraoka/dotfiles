@@ -141,7 +141,7 @@ eval "$(thefuck --alias)"
 # cd したらすぐにlsしてくれる
 chpwd(){
 	if [[ $(pwd) != $HOME ]]; then;
-    ls
+    ei
 	fi
 }
 
@@ -202,6 +202,19 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # Created by `pipx` on 2024-06-01 13:51:03
 export PATH="$PATH:/Users/kaitomuraoka/.local/bin"
+
+# eza alias
+alias ei="eza --icons --git"
+alias ea="eza -a --icons --git"
+alias ee="eza -aahl --icons --git"
+alias et="eza -T -L 3 -a -I 'node_modules|.git|.cache' --icons"
+alias eta="eza -T -a -I 'node_modules|.git|.cache' --color=always --icons | less -r"
+alias ls=ei
+alias la=ea
+alias ll=ee
+alias lt=et
+alias lta=eta
+alias l="clear && ls"
 
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
