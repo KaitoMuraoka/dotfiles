@@ -141,7 +141,7 @@ eval "$(thefuck --alias)"
 # cd したらすぐにlsしてくれる
 chpwd(){
 	if [[ $(pwd) != $HOME ]]; then;
-    ei
+    eza --icons --git
 	fi
 }
 
