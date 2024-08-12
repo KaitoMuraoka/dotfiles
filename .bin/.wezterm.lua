@@ -3,7 +3,7 @@
 local wezterm = require("wezterm")
 
 -- これはコンフィギュレーションを保持する
-local config = {}
+local config = wezterm.config_builder()
 
 -- より新しいバージョンの wezterm では、config_builder を使用することで、より明確なエラーメッセージを提供できます
 if wezterm.config_builder then
@@ -21,8 +21,8 @@ config.keys = {
 	{ key = "t", mods = "CMD", action = act.SpawnTab("DefaultDomain") }, -- create new tab
 	{ key = "x", mods = "CMD", action = act.CloseCurrentTab({ confirm = true }) }, -- close tab
 	{ key = "v", mods = "CMD", action = act.PasteFrom("Clipboard") },
-	{ key = "[", mods = "CTRL", action = wezterm.action({ ActivateTabRelative = -1 }) },
-	{ key = "]", mods = "CTRL", action = wezterm.action({ ActivateTabRelative = 1 }) },
+	{ key = "LeftArrow", action = wezterm.action({ ActivateTabRelative = -1 }) },
+	{ key = "RightArrow", action = wezterm.action({ ActivateTabRelative = 1 }) },
 }
 
 -- 時間のフォーマットを設定
