@@ -13,6 +13,7 @@ end
 -- ここで、設定した内容を実際に適用する
 config.color_scheme = "Catppuccin Macchiato" -- 配色を変える
 config.window_background_opacity = 0.75 -- Window の背景を調節
+config.font = "JetBrainsMonoNL"
 config.font_size = 14 -- font size
 config.disable_default_key_bindings = true
 
