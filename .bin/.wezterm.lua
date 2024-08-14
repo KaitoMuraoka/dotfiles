@@ -13,6 +13,7 @@ end
 -- ここで、設定した内容を実際に適用する
 config.color_scheme = "Catppuccin Macchiato" -- 配色を変える
 config.window_background_opacity = 0.75 -- Window の背景を調節
+config.font = wezterm.font("JetBrains Mono")
 config.font_size = 15 -- font size
 config.disable_default_key_bindings = true
 
@@ -21,8 +22,8 @@ config.keys = {
 	{ key = "t", mods = "CMD", action = act.SpawnTab("DefaultDomain") }, -- create new tab
 	{ key = "x", mods = "CMD", action = act.CloseCurrentTab({ confirm = true }) }, -- close tab
 	{ key = "v", mods = "CMD", action = act.PasteFrom("Clipboard") },
-	{ key = "LeftArrow", action = wezterm.action({ ActivateTabRelative = -1 }) },
-	{ key = "RightArrow", action = wezterm.action({ ActivateTabRelative = 1 }) },
+	{ key = "LeftArrow", mods = "CMD", action = wezterm.action({ ActivateTabRelative = -1 }) },
+	{ key = "RightArrow", mods = "CMD", action = wezterm.action({ ActivateTabRelative = 1 }) },
 }
 
 -- 時間のフォーマットを設定
