@@ -7,6 +7,8 @@ set smartindent "インデント
 set clipboard+=unnamed "クリップボード
 set laststatus=2 "ステータスライン
 set smartindent "改行の時に自動でインデント
+set tabstop=2 " タブ幅を2
+set shiftwidth=2 " シフト幅を2
 syntax enable "シンタックス
 if has('persistent_undo')" Undoの永続化
 	let undo_path = expand('~/.vim/undo')
