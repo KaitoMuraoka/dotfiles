@@ -21,5 +21,11 @@ call plug#begin()
   Plug 'vim-airline/vim-airline-themes'
   let g:airline_theme='molokai'
   Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+  Plug 'ghifarit53/tokyonight-vim'
 call plug#end()
 
+" colorscheme
+set termguicolors
+let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_enable_italic = 1
+colorscheme tokyonight
