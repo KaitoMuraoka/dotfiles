@@ -42,6 +42,8 @@ call plug#begin()
 	" Flutter lsp
 	Plug 'dart-lang/dart-vim-plugin'
 	Plug 'thosakwe/vim-flutter'
+	" git
+	Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " colorscheme
