@@ -15,6 +15,9 @@ if has('persistent_undo')" Undoの永続化
 	exe 'set undodir=' .. undo_path
 	set undofile
 endif
+set completeopt=menuone,noinsert
+" 補完表示時のEnterで改行をしない
+inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 
 " Plugin
 call plug#begin()
