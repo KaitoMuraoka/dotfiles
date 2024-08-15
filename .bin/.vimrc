@@ -39,6 +39,9 @@ call plug#begin()
 
   Plug 'hrsh7th/vim-vsnip'
   Plug 'hrsh7th/vim-vsnip-integ'
+	" Flutter lsp
+	Plug 'dart-lang/dart-vim-plugin'
+	Plug 'thosakwe/vim-flutter'
 call plug#end()
 
 " colorscheme
