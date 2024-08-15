@@ -22,6 +22,7 @@ inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 " Plugin
 call plug#begin()
   Plug 'preservim/nerdtree'
+	let NERDTreeShowHidden=1
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   let g:airline_theme='molokai'
@@ -36,7 +37,6 @@ call plug#begin()
   Plug 'prabirshrestha/vim-lsp'
   Plug 'mattn/vim-lsp-settings'
   Plug 'mattn/vim-lsp-icons'
-
   Plug 'hrsh7th/vim-vsnip'
   Plug 'hrsh7th/vim-vsnip-integ'
 	" Flutter lsp
