@@ -22,6 +22,18 @@ call plug#begin()
   let g:airline_theme='molokai'
   Plug 'catppuccin/vim', { 'as': 'catppuccin' }
   Plug 'ghifarit53/tokyonight-vim'
+  " lsp
+  Plug 'prabirshrestha/vim-lsp'
+  Plug 'mattn/vim-lsp-settings'
+  "other lsp
+  Plug 'prabirshrestha/asyncomplete.vim'
+  Plug 'prabirshrestha/asyncomplete-lsp.vim'
+  Plug 'prabirshrestha/vim-lsp'
+  Plug 'mattn/vim-lsp-settings'
+  Plug 'mattn/vim-lsp-icons'
+
+  Plug 'hrsh7th/vim-vsnip'
+  Plug 'hrsh7th/vim-vsnip-integ'
 call plug#end()
 
 " colorscheme
