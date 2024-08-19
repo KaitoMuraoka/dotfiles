@@ -22,8 +22,8 @@ config.keys = {
 	{ key = "t", mods = "CMD", action = act.SpawnTab("DefaultDomain") }, -- create new tab
 	{ key = "x", mods = "CMD", action = act.CloseCurrentTab({ confirm = true }) }, -- close tab
 	{ key = "v", mods = "CMD", action = act.PasteFrom("Clipboard") },
-	{ key = "LeftArrow", mods = "SHIFT", action = wezterm.action({ ActivateTabRelative = -1 }) },
-	{ key = "RightArrow", mods = "SHIFT", action = wezterm.action({ ActivateTabRelative = 1 }) },
+	{ key = "LeftArrow", mods = "CMD", action = wezterm.action({ ActivateTabRelative = -1 }) },
+	{ key = "RightArrow", mods = "CMD", action = wezterm.action({ ActivateTabRelative = 1 }) },
 }
 
 -- 時間のフォーマットを設定
