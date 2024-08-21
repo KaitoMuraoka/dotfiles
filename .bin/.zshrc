@@ -195,7 +195,7 @@ alias imwork='cd ~/caraquri/'
 alias imdeveloper='cd ~/personalDevelop/'
 
 # flutter aliases
-alias create-mobile='create --platforms=ios,android'
+alias flutter-create-mobile='flutter create --platforms=ios,android'
 
 [[ "$TERM_PROGRAM" == "CodeEditApp_Terminal" ]] && . "/Applications/CodeEdit.app/Contents/Resources/codeedit_shell_integration.zsh"
 fpath+=${ZDOTDIR:-~}/.zsh_functions

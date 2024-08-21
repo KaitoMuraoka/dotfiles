@@ -13,7 +13,7 @@ end
 -- ここで、設定した内容を実際に適用する
 config.color_scheme = "Catppuccin Macchiato" -- 配色を変える
 config.window_background_opacity = 0.75 -- Window の背景を調節
-config.font = wezterm.font("JetBrains Mono NL")
+config.font = wezterm.font("UDEV Gothic")
 config.font_size = 15 -- font size
 config.disable_default_key_bindings = true
 
