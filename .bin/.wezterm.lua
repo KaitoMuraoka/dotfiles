@@ -14,7 +14,7 @@ end
 config.color_scheme = "Catppuccin Macchiato" -- 配色を変える
 config.window_background_opacity = 0.75 -- Window の背景を調節
 config.font = wezterm.font("UDEV Gothic")
-config.font_size = 15 -- font size
+config.font_size = 18 -- font size
 config.disable_default_key_bindings = true
 
 local act = wezterm.action

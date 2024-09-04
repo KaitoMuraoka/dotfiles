@@ -191,8 +191,11 @@ alias emacs='emacs -nw'
 alias vv='~/dotfiles/show-tool-version/ShowToolVersion.sh'
 
 # alias move Directory
-alias imwork='cd ~/caraquri/'
+alias imwork='cd ~/caraquri/ && cd'
 alias imdeveloper='cd ~/personalDevelop/'
+
+# alias Lazygit
+alias lg='lazygit'
 
 # flutter aliases
 alias flutter-create-mobile='flutter create --platforms=ios,android'

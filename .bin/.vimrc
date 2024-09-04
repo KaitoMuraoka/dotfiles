@@ -29,8 +29,8 @@ call plug#begin()
   Plug 'catppuccin/vim', { 'as': 'catppuccin' }
   Plug 'ghifarit53/tokyonight-vim'
   " lsp
-  Plug 'prabirshrestha/vim-lsp'
   Plug 'mattn/vim-lsp-settings'
+  Plug 'prabirshrestha/vim-lsp'
   "other lsp
   Plug 'prabirshrestha/asyncomplete.vim'
   Plug 'prabirshrestha/asyncomplete-lsp.vim'
