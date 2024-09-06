@@ -1,0 +1,6 @@
+" This is idevim config in Android Studio
+let mapleader = " "
+
+Plug 'preservim/nerdtree' " NerdTree
+nnoremap <C-W> :NERDTreeToggle<CR>
+nnoremap <C-Q> :NERDTreeClose<CR>
