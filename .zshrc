@@ -158,10 +158,9 @@ alias allClean='git restore . && git restore --staged . && git clean -f .'
 alias act='act --container-architecture linux/amd64'
 
 # NeoVim Alias
-alias nz='nvim ~/.zshrc && source ~/.zshrc'
-alias ng='nvim ~/.gitconfig && source ~/.gitconfig'
-alias nn='cd ~/.config/nvim && nvim .'
-alias nnote="nvim ~/note/"
+alias nz='nvim ~/dotfiles/.zshrc && source ~/.zshrc'
+alias ng='nvim ~/dotfiles/.gitconfig && source ~/.gitconfig'
+alias nn='cd ~/dotfiles/.config/nvim && nvim .'
 alias pathcheck='echo $PATH'
 
 # note directory
