@@ -1,26 +1,48 @@
 # dotfiles
 
-# Make Command
-セットアップは、[Makefile](./Makefile) で行う
+## Setup
 
-- `make init` : 最初のプリファレンスを設定する。
-- `make link` : dotfiles をリンクさせる
-- `make defaults` : Mac自体の環境設定を操作
-- `make brew` : [.Brewfile](./.bin/.Brewfile)にある物を `brew install` する。   
-- `make update` : [.Brewfile](./.bin/.Brewfile)にある物を更新することができる。
+Install はスクリプト実行する。
 
-# Defaults Setup
-Mac 自体の環境設定を操作。
+```sh
+zsh setup.sh
+```
 
-## Finder
-- Show hidden files by defaults
-- Show files with all extensions
-- Avoid creating .DS_Store files on network volumes
+Homebrew は、Brewfile で管理している。
+Brewfile で管理しているツールを導入したい場合は以下のように導入する。
 
-## SystemUIServer
-- Display date, day, and time in the menu bar : `'M'月'd'日('E')' H'時'mm'分'ss'秒''`
-- Display battery level in the menu bar
-- Show Bluetooth in the menu bar
+```sh
+brew bundle
+```
 
-## Other
-- Save screenshots as PNGs
+詳細は[Brewfileの使い方]() を参照
+
+## 追加方法
+
+追加したいファイル作成・記述して再度、
+
+```sh
+zsh setup.sh
+```
+
+を行う。
+
+## Brewfileの使い方
+
+ここでは、Birewfile の基本的な使い方を紹介する。
+
+### 追加
+
+`brew install` で追加したら、以下のコマンドを入力する。
+
+```sh
+brew bundle dump
+```
+
+### 削除
+
+`brew uninstall` した場合は、以下のコマンドを入力する。
+
+```sh
+brew bundle cleanup
+```
