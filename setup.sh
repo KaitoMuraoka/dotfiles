@@ -6,7 +6,7 @@ do
 done
 
 
-DOT_FILES=(nvim aerospace)
+DOT_FILES=(nvim aerospace zed)
 for file in ${DOT_FILES[@]}
 do
         ln -s $HOME/dotfiles/.config/$file $HOME/.config/$file
