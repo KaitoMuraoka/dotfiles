@@ -223,3 +223,4 @@ alias l="clear && ls"
 ## WezTerm
 PATH="$PATH:/Applications/WezTerm.app/Contents/MacOS"
 export PATH
+export PATH="$HOME/.cargo/bin:$PATH"

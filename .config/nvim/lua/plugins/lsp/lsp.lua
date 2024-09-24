@@ -49,6 +49,16 @@ return {
 			},
 		})
 
+		lspconfig.rust_analyzer.setup({
+			capabilities = {
+				workspace = {
+					didChangeWatchedFiles = {
+						dynamicRegistration = true,
+					},
+				},
+			},
+		})
+
 		lspconfig.emmet_ls.setup({
 			capabilities = capabilities,
 			filetypes = {
