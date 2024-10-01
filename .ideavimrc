@@ -1,5 +1,8 @@
 " This is idevim config in Android Studio
 let mapleader = " "
+set number "行番号
+set relativenumber "相対行番号
+
 
 Plug 'preservim/nerdtree' " NerdTree
 nnoremap <C-W> :NERDTreeToggle<CR>
