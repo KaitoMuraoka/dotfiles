@@ -181,7 +181,7 @@ alias createSwiftCLI='swift package init  --type executable --name'
 alias freeze='freeze --show-line-numbers --window'
 
 # emacs no-window
-alias emacs='emacs -nw'
+#alias emacs='emacs -nw'
 
 # VSCodium alias
 alias code='codium'
