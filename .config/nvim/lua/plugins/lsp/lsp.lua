@@ -27,6 +27,8 @@ return {
 			end,
 		})
 
+		lspconfig.ts_ls.setup({})
+
 		-- swift
 		lspconfig.sourcekit.setup({
 			capabilities = {
@@ -49,6 +51,24 @@ return {
 			},
 		})
 
+		lspconfig.svelte.setup({
+			capabilities = capabilities,
+			on_attach = function(client, bufnr)
+				vim.api.nvim_create_autocmd("BufWritePost", {
+					pattern = { "*.js", "*.ts" },
+					callback = function(ctx)
+						-- Here use ctx.match instead of ctx.file
+						client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.match })
+					end,
+				})
+			end,
+		})
+
+		lspconfig.emmet_ls.setup({
+			capabilities = capabilities,
+			filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+		})
+
 		lspconfig.rust_analyzer.setup({
 			capabilities = {
 				workspace = {
@@ -56,21 +76,6 @@ return {
 						dynamicRegistration = true,
 					},
 				},
-			},
-		})
-
-		lspconfig.emmet_ls.setup({
-			capabilities = capabilities,
-			filetypes = {
-				"astro",
-				"html",
-				"typescriptreact",
-				"javascriptreact",
-				"css",
-				"sass",
-				"scss",
-				"less",
-				"svelte",
 			},
 		})
 
