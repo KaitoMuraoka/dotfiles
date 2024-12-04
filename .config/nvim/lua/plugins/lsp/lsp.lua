@@ -94,6 +94,12 @@ return {
 			},
 		})
 
+		-- bashls
+		lspconfig.bashls.setup({
+			cmd = { "bash-language-server", "start" },
+			filetypes = { "bash", "sh" },
+		})
+
 		-- ccls
 		lspconfig.ccls.setup({
 			capabilities = capabilities,
