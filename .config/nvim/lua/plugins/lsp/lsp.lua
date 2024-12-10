@@ -94,9 +94,26 @@ return {
 			},
 		})
 
+		-- bashls
+		lspconfig.bashls.setup({
+			cmd = { "bash-language-server", "start" },
+			filetypes = { "bash", "sh" },
+		})
+
 		-- ccls
 		lspconfig.ccls.setup({
 			capabilities = capabilities,
+		})
+
+		-- spectal
+		lspconfig.spectal.setup({
+			cmd = { "spectral-language-server", "--stdio" },
+			filetypes = { "yaml", "json", "yml" },
+			setting = {
+				enable = true,
+				run = "onType",
+				validateLanguages = { "yaml", "json", "yml" },
+			},
 		})
 	end,
 }
