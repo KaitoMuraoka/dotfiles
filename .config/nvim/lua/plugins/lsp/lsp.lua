@@ -104,5 +104,11 @@ return {
 		lspconfig.ccls.setup({
 			capabilities = capabilities,
 		})
+
+		-- yaml, yml
+		lspconfig.yamlls.setup({
+			cmd = { "yaml-language-server", "--stdio" },
+			filetypes = { "yaml", "yaml.docker-compose", "yaml.gitlab" },
+		})
 	end,
 }
