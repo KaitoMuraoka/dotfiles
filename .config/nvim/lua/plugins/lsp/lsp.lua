@@ -105,10 +105,15 @@ return {
 			capabilities = capabilities,
 		})
 
-		-- yaml, yml
-		lspconfig.yamlls.setup({
-			cmd = { "yaml-language-server", "--stdio" },
-			filetypes = { "yaml", "yaml.docker-compose", "yaml.gitlab" },
+		-- spectal
+		lspconfig.spectal.setup({
+			cmd = { "spectral-language-server", "--stdio" },
+			filetypes = { "yaml", "json", "yml" },
+			setting = {
+				enable = true,
+				run = "onType",
+				validateLanguages = { "yaml", "json", "yml" },
+			},
 		})
 	end,
 }
