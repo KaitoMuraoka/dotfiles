@@ -66,7 +66,22 @@ return {
 
 		lspconfig.emmet_ls.setup({
 			capabilities = capabilities,
-			filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+			filetypes = {
+				"astro",
+				"css",
+				"eruby",
+				"html",
+				"htmldjango",
+				"javascriptreact",
+				"less",
+				"pug",
+				"sass",
+				"scss",
+				"svelte",
+				"typescriptreact",
+				"vue",
+				"htmlangular",
+			},
 		})
 
 		lspconfig.rust_analyzer.setup({
