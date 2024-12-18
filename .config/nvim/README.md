@@ -8,6 +8,7 @@
 - [comment.nvim](https://github.com/numToStr/Comment.nvim)
 - [image-clip.nvim](https://github.com/HakonHarnes/img-clip.nvim)
 - [formate: conform.nvim](https://github.com/stevearc/conform.nvim)
+- [gsearch nvim](https://github.com/dzfrias/gsearch.nvim?tab=readme-ov-file)
 
 ### Editor
 
