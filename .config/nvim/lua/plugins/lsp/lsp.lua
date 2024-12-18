@@ -134,7 +134,8 @@ return {
 		})
 
 		-- spectal
-		lspconfig.spectal.setup({
+		lspconfig.spectral.setup({
+			capabilities = capabilities,
 			cmd = { "spectral-language-server", "--stdio" },
 			filetypes = { "yaml", "json", "yml" },
 			setting = {
