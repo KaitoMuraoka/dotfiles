@@ -1,0 +1,3 @@
+return {
+	"dzfrias/gsearch.nvim",
+}
