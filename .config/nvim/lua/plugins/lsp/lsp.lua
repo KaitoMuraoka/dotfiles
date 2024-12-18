@@ -144,5 +144,8 @@ return {
 				validateLanguages = { "yaml", "json", "yml" },
 			},
 		})
+
+		-- ruby lsp
+		lspconfig.ruby_lsp.setup({})
 	end,
 }
