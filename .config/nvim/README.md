@@ -1,31 +1,162 @@
-# とんとんぼ's NeoVim
+# dotfiles/.config/nvim
 
-## Add Package
+<a href="https://dotfyle.com/KaitoMuraoka/dotfiles-config-nvim"><img src="https://dotfyle.com/KaitoMuraoka/dotfiles-config-nvim/badges/plugins?style=flat" /></a>
+<a href="https://dotfyle.com/KaitoMuraoka/dotfiles-config-nvim"><img src="https://dotfyle.com/KaitoMuraoka/dotfiles-config-nvim/badges/leaderkey?style=flat" /></a>
+<a href="https://dotfyle.com/KaitoMuraoka/dotfiles-config-nvim"><img src="https://dotfyle.com/KaitoMuraoka/dotfiles-config-nvim/badges/plugin-manager?style=flat" /></a>
 
-- [Markdown.nvim](https://github.com/MeanderingProgrammer/markdown.nvim)
-- [Flutter tools](https://github.com/akinsho/flutter-tools.nvim)
-- [toggleterm](https://github.com/akinsho/toggleterm.nvim)
-- [comment.nvim](https://github.com/numToStr/Comment.nvim)
-- [image-clip.nvim](https://github.com/HakonHarnes/img-clip.nvim)
-- [formate: conform.nvim](https://github.com/stevearc/conform.nvim)
+## Install Instructions
 
-### Editor
+> Install requires Neovim 0.9+. Always review the code before installing a configuration.
 
-- [todo-comment](https://github.com/folke/todo-comments.nvim)
-- [grug-far.nvim](https://github.com/MagicDuck/grug-far.nvim)
-- neo-tree
-- whitch-key
-- gitsigns
-- flash
-- nvim-autopairs
-- luaSnip
-- xcode-builder
+Clone the repository and install the plugins:
 
-### UI
+```sh
+git clone git@github.com:KaitoMuraoka/dotfiles ~/.config/KaitoMuraoka/dotfiles
+```
 
-- nui.nvim
-- mini.icons
-- nvim-notify
-- bufferline
-- noice
-- [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+Open Neovim with this config:
+
+```sh
+NVIM_APPNAME=KaitoMuraoka/dotfiles/.config/nvim nvim
+```
+
+## Plugins
+
+### colorscheme
+
+- [rebelot/kanagawa.nvim](https://dotfyle.com/plugins/rebelot/kanagawa.nvim)
+- [folke/tokyonight.nvim](https://dotfyle.com/plugins/folke/tokyonight.nvim)
+
+### comment
+
+- [folke/todo-comments.nvim](https://dotfyle.com/plugins/folke/todo-comments.nvim)
+- [JoosepAlviste/nvim-ts-context-commentstring](https://dotfyle.com/plugins/JoosepAlviste/nvim-ts-context-commentstring)
+- [numToStr/Comment.nvim](https://dotfyle.com/plugins/numToStr/Comment.nvim)
+
+### completion
+
+- [hrsh7th/nvim-cmp](https://dotfyle.com/plugins/hrsh7th/nvim-cmp)
+
+### diagnostics
+
+- [folke/trouble.nvim](https://dotfyle.com/plugins/folke/trouble.nvim)
+
+### editing-support
+
+- [windwp/nvim-ts-autotag](https://dotfyle.com/plugins/windwp/nvim-ts-autotag)
+- [windwp/nvim-autopairs](https://dotfyle.com/plugins/windwp/nvim-autopairs)
+
+### file-explorer
+
+- [nvim-neo-tree/neo-tree.nvim](https://dotfyle.com/plugins/nvim-neo-tree/neo-tree.nvim)
+
+### formatting
+
+- [stevearc/conform.nvim](https://dotfyle.com/plugins/stevearc/conform.nvim)
+
+### fuzzy-finder
+
+- [nvim-telescope/telescope.nvim](https://dotfyle.com/plugins/nvim-telescope/telescope.nvim)
+
+### git
+
+- [kdheepak/lazygit.nvim](https://dotfyle.com/plugins/kdheepak/lazygit.nvim)
+- [lewis6991/gitsigns.nvim](https://dotfyle.com/plugins/lewis6991/gitsigns.nvim)
+
+### github
+
+- [pwntester/octo.nvim](https://dotfyle.com/plugins/pwntester/octo.nvim)
+
+### icon
+
+- [echasnovski/mini.icons](https://dotfyle.com/plugins/echasnovski/mini.icons)
+- [nvim-tree/nvim-web-devicons](https://dotfyle.com/plugins/nvim-tree/nvim-web-devicons)
+
+### indent
+
+- [lukas-reineke/indent-blankline.nvim](https://dotfyle.com/plugins/lukas-reineke/indent-blankline.nvim)
+
+### keybinding
+
+- [folke/which-key.nvim](https://dotfyle.com/plugins/folke/which-key.nvim)
+
+### lsp
+
+- [neovim/nvim-lspconfig](https://dotfyle.com/plugins/neovim/nvim-lspconfig)
+
+### lsp-installer
+
+- [williamboman/mason.nvim](https://dotfyle.com/plugins/williamboman/mason.nvim)
+
+### markdown-and-latex
+
+- [MeanderingProgrammer/render-markdown.nvim](https://dotfyle.com/plugins/MeanderingProgrammer/render-markdown.nvim)
+
+### media
+
+- [HakonHarnes/img-clip.nvim](https://dotfyle.com/plugins/HakonHarnes/img-clip.nvim)
+
+### motion
+
+- [folke/flash.nvim](https://dotfyle.com/plugins/folke/flash.nvim)
+
+### nvim-dev
+
+- [nvim-lua/plenary.nvim](https://dotfyle.com/plugins/nvim-lua/plenary.nvim)
+- [folke/neodev.nvim](https://dotfyle.com/plugins/folke/neodev.nvim)
+- [MunifTanjim/nui.nvim](https://dotfyle.com/plugins/MunifTanjim/nui.nvim)
+
+### plugin-manager
+
+- [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
+
+### programming-languages-support
+
+- [akinsho/flutter-tools.nvim](https://dotfyle.com/plugins/akinsho/flutter-tools.nvim)
+
+### search
+
+- [MagicDuck/grug-far.nvim](https://dotfyle.com/plugins/MagicDuck/grug-far.nvim)
+
+### snippet
+
+- [L3MON4D3/LuaSnip](https://dotfyle.com/plugins/L3MON4D3/LuaSnip)
+
+### statusline
+
+- [nvim-lualine/lualine.nvim](https://dotfyle.com/plugins/nvim-lualine/lualine.nvim)
+
+### syntax
+
+- [nvim-treesitter/nvim-treesitter](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter)
+
+### tabline
+
+- [akinsho/bufferline.nvim](https://dotfyle.com/plugins/akinsho/bufferline.nvim)
+
+### terminal-integration
+
+- [akinsho/toggleterm.nvim](https://dotfyle.com/plugins/akinsho/toggleterm.nvim)
+
+### utility
+
+- [folke/noice.nvim](https://dotfyle.com/plugins/folke/noice.nvim)
+- [stevearc/dressing.nvim](https://dotfyle.com/plugins/stevearc/dressing.nvim)
+- [echasnovski/mini.nvim](https://dotfyle.com/plugins/echasnovski/mini.nvim)
+- [rcarriga/nvim-notify](https://dotfyle.com/plugins/rcarriga/nvim-notify)
+- [wojciech-kulik/xcodebuild.nvim](https://dotfyle.com/plugins/wojciech-kulik/xcodebuild.nvim)
+
+## Language Servers
+
+- astro
+- cssls
+- emmet_ls
+- graphql
+- html
+- lua_ls
+- prismals
+- pyright
+- svelte
+- tailwindcss
+
+This readme was generated by [Dotfyle](https://dotfyle.com)
