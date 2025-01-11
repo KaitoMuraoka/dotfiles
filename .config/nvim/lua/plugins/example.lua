@@ -103,6 +103,7 @@ return {
         -- example to setup with typescript.nvim
         tsserver = function(_, opts)
           require("typescript").setup({ server = opts })
+          require("flutter-tools").setup({}) -- use defaults
           return true
         end,
         -- Specify * to use this function as a fallback for any server
@@ -121,6 +122,7 @@ return {
     opts = {
       ensure_installed = {
         "bash",
+        "dart",
         "html",
         "javascript",
         "json",
