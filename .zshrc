@@ -215,6 +215,9 @@ alias lt=et
 alias lta=eta
 alias l="clear && ls"
 
+# git-branch-kit
+alias branch="git-branch-kit"
+
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
 [[ -f /Users/kaitomuraoka/.dart-cli-completion/zsh-config.zsh ]] && . /Users/kaitomuraoka/.dart-cli-completion/zsh-config.zsh || true
