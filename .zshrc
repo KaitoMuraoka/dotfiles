@@ -129,8 +129,10 @@ eval "$(rbenv init -)"
 export PATH=$PATH:/Users/kaitomuraoka/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/fastlane-2.220.0/fastlane/lib/fastlane.rb/fastlane/bin
 
 #Java
-export JAVA_HOME=`/usr/libexec/java_home -v "17"`
+#17
+export JAVA_HOME=`/usr/libexec/java_home -v "21"`
 PATH=$JAVA_HOME/bin:$PATH
+export PATH=$PATH:~/jdt-language-server-1.45.0-202501221836/bin
 
 # fzf key bindings と fuzzy 補完
 eval "$(fzf --zsh)"
@@ -149,6 +151,7 @@ chpwd(){
 export PATH=$PATH:/Applications/Android\ Studio.app/Contents/MacOS
 
 # Aliases 
+alias c='clear' # clearと入力するのがだるい🥱
 # Git
 alias gs='git status'
 alias gc='git config user.name;git config user.email'
@@ -158,9 +161,10 @@ alias allClean='git restore . && git restore --staged . && git clean -f .'
 alias act='act --container-architecture linux/amd64'
 
 # NeoVim Alias
+alias n='nvim'
 alias nz='nvim ~/dotfiles/.zshrc && source ~/.zshrc'
 alias ng='nvim ~/dotfiles/.gitconfig && source ~/.gitconfig'
-alias nn='cd ~/dotfiles/.config/nvim && nvim .'
+alias nn='cd ~/.config/nvim && nvim .'
 alias pathcheck='echo $PATH'
 
 # note directory
@@ -224,3 +228,7 @@ alias l="clear && ls"
 PATH="$PATH:/Applications/WezTerm.app/Contents/MacOS"
 export PATH
 export PATH="$HOME/.cargo/bin:$PATH"
+
+## go
+export PATH=$PATH:$HOME/go/bin
+
