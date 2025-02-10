@@ -53,5 +53,5 @@ let g:tokyonight_enable_italic = 1
 colorscheme tokyonight
 
 " ==== KeyMap ====
-nnoremap <silent><C-e> :NERDTreeToggle<CR>
+nnoremap <silent><C-q> :NERDTreeToggle<CR>
 
