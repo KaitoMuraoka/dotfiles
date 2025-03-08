@@ -1,0 +1,45 @@
+* My dotfiles
+This directory contains the dotfiles for my system
+
+** Requirements
+Ensure you have the following installed on your system
+
+*** [[https://brew.sh/ja/][Homebrew]]
+
+#+begin_src sh
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#+end_src
+
+*** Git
+
+#+begin_src sh
+  brew install git
+#+end_src
+
+*** Emacs
+
+Clone [[https://github.com/KaitoMuraoka/.emacs.d][my .emacs.d]] from the following repository and setup as per README:
+
+#+begin_src sh
+  git clone https://github.com/KaitoMuraoka/.emacs.d.git
+#+end_src
+
+*** Stow
+
+#+begin_src sh
+  brew install stow
+#+end_src
+
+** Installation
+First, Check out the dotfiles repo in your $HOME directory using git
+
+#+begin_src sh
+  git clone git@github.com:KaitoMuraoka/dotfiles.git
+  cd dotfiles
+#+end_src
+
+then use GNU stow to create symlinks
+
+#+begin_src sh
+  stow .
+#+end_src
