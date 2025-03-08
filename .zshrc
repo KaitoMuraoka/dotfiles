@@ -235,3 +235,5 @@ export PATH="$HOME/.cargo/bin:$PATH"
 ## go
 export PATH=$PATH:$HOME/go/bin
 
+## zoxide
+eval "$(zoxide init zsh)"
