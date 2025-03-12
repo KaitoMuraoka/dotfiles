@@ -27,6 +27,7 @@
 
 [merge]
     conflictstyle = diff3
+	tool = opendiff
 
 [diff]
     colorMoved = default
@@ -38,3 +39,7 @@
 
 [init]
 	defaultBranch = main
+[mergetool "opendiff"]
+	cmd = opendiff \"\" \"\" -ancestor \"\" -merge \"\"
+[mergetool]
+	prompt = false
