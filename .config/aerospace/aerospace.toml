@@ -239,6 +239,6 @@ run = "move-node-to-workspace 2"
 [[on-window-detected]]
 if.app-id = 'com.coteditor.CotEditor'
 run = "move-node-to-workspace 2"
-[[on-window-detected]]
-  if.app.id = 'org.gnu.Emacs'
-  run = "move-node-to-workspace 2"
+#[[on-window-detected]]
+#if.app.id = 'org.gnu.Emacs'
+#run = "move-node-to-workspace 2"
