@@ -205,34 +205,34 @@ alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
-# Terminal: T
+# Terminal: T→5
 [[on-window-detected]]
 if.app-id = 'com.github.wez.wezterm'
-run = "move-node-to-workspace T"
+run = "move-node-to-workspace 4"
 [[on-window-detected]]
   if.app-id = 'com.googlecode.iterm2'
-  run = "move-node-to-workspace T"
+  run = "move-node-to-workspace 4"
 
-# Web Browser: W
+# Web Browser: W→5
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari'
-run = "move-node-to-workspace W"
+run = "move-node-to-workspace 5"
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
-run = "move-node-to-workspace W"
+run = "move-node-to-workspace 5"
 
-# Slack
+# Slack-> 5
 [[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
-run = "move-node-to-workspace S"
+run = "move-node-to-workspace 5"
 
 # Editor IDE
 [[on-window-detected]]
 if.app-id = 'com.apple.dt.Xcode'
-run = "move-node-to-workspace E"
+run = "move-node-to-workspace 2"
 [[on-window-detected]]
 if.app-id = 'com.google.android.studio'
-run = "move-node-to-workspace E"
+run = "move-node-to-workspace 2"
 [[on-window-detected]]
 if.app-id = 'com.coteditor.CotEditor'
-run = "move-node-to-workspace E"
+run = "move-node-to-workspace 2"
