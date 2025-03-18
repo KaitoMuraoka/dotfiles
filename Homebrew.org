@@ -41,6 +41,12 @@ Syntax-highlighting pager for git and diff output
   brew install git-delta
 #+end_src
 
+** aerospace
+
+#+begin_src shell
+  brew install --cask nikitabobko/tap/aerospace
+#+end_src
+
 ** [[https://formulae.brew.sh/formula/neovim#default][neovim]]
 Good Editor!
 

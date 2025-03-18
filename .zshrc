@@ -165,11 +165,7 @@ alias n='nvim'
 alias nz='nvim ~/dotfiles/.zshrc && source ~/.zshrc'
 alias ng='nvim ~/dotfiles/.gitconfig && source ~/.gitconfig'
 alias nn='cd ~/.config/nvim && nvim .'
-
-# Emacs Alias
-alias ez='emacs -nw ~/dotfiles/.zshrc && source ~/.zshrc'
-alias eg='emacs -nw ~/dotfiles/.gitconfig && source ~/.gitconfig'
-alias ee='cd ~/.emacs.d/ && emacs -nw .' 
+alias pathcheck='echo $PATH'
 
 # note directory
 alias worknote='cd ~/Desktop/note/work-note/ && nvim'
@@ -239,3 +235,5 @@ export PATH="$HOME/.cargo/bin:$PATH"
 ## go
 export PATH=$PATH:$HOME/go/bin
 
+## zoxide
+eval "$(zoxide init zsh)"
