@@ -234,7 +234,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 ## go
 export GOROOT=$(go1.24.1 env GOROOT)
-export PATH=$GOROOT/bin:$PATH
+#export PATH=$GOROOT/bin:$PATH
+export PATH=$PATH:~/go/bin
 
 ## zoxide
 eval "$(zoxide init zsh)"
