@@ -1,3 +1,4 @@
+
 # It's not necessary to copy all keys to your config.
 # If the key is missing in your config, "default-config.toml" will serve as a fallback
 
@@ -242,6 +243,7 @@ run = "move-node-to-workspace 2"
 [[on-window-detected]]
 if.app-id = 'com.apple.iphonesimulator'
 run = "move-node-to-workspace 2"
-#[[on-window-detected]]
-#if.app.id = 'org.gnu.Emacs'
-#run = "move-node-to-workspace 2"
+[[on-window-detected]]
+if.app-id = 'org.gnu.Emacs'
+run = "move-node-to-workspace 2"
+
