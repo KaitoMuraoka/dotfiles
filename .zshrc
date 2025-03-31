@@ -1,5 +1,8 @@
 export PATH=/opt/homebrew/bin:$PATH
 
+# oh-my-posh
+eval "$(oh-my-posh init zsh)"
+eval "$(oh-my-posh init zsh --config ~/oh-my-posh/mytheme.omp.json)"
 
 # the fuck
 eval "$(thefuck --alias)"
@@ -10,6 +13,9 @@ chpwd(){
     eza --icons --git
 	fi
 }
+
+# reload alias
+alias reload="exec zsh"
 
 # Aliases 
 alias c='clear' # clearと入力するのがだるい🥱
@@ -90,3 +96,11 @@ alias l="clear && ls"
 
 ## go
 export PATH=$PATH:$HOME/go/bin
+
+## node nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+## add zsh-syntax-highlighting
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+## add zsh-autosuggestions
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
