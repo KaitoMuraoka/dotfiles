@@ -3,4 +3,8 @@
 # zsh
 .zsh_history
 
+# Neovim
+.config/nvim
+# the fuck
+.config/thefuck/
 
