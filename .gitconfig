@@ -2,9 +2,6 @@
 	name = KaitoMuraoka
 	email = kaitoboshi@icloud.com
 
-[includeIf "gitdir:~/caraquri/"]
-  path = ~/.gitconfig_cq
-
 [core]
 	editor = emacs -nw -q
 	excludesfile = ~/.gitignore_global
