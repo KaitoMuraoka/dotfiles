@@ -6,6 +6,12 @@ eval "$(oh-my-posh init zsh)"
 # the fuck
 eval "$(thefuck --alias)"
 
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+    autoload -Uz compinit
+    compinit
+fi
+
 # cd したらすぐにlsしてくれる
 chpwd(){
 	if [[ $(pwd) != $HOME ]]; then;
