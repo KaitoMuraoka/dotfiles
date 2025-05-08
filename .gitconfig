@@ -21,7 +21,6 @@
     line-numbers = true
     features = colibri
 
-
 [merge]
     conflictstyle = diff3
 	tool = opendiff
@@ -30,7 +29,7 @@
     colorMoved = default
 
 [alias]
-  emptycommit = "commit --allow-empty"
+  emptycommit = "commit --allow-empty -m "空コミット""
   logo = "log --oneline"
   delete-merged-branch = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|main'|xargs git branch -d; };f"
   copy-branch = "!f() { git branch --show-current | tr -d '\n' | pbcopy; echo 'Current branch name copied to clipboard.'; }; f"
