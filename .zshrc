@@ -37,6 +37,7 @@ alias n='nvim'
 alias nz='nvim ~/dotfiles/.zshrc && source ~/.zshrc'
 alias ng='nvim ~/dotfiles/.gitconfig && source ~/.gitconfig'
 alias nn='cd ~/.config/nvim && nvim .'
+
 alias pathcheck='echo $PATH'
 
 # note directory
@@ -58,6 +59,10 @@ alias freeze='freeze --show-line-numbers --window'
 
 # emacs no-window
 #alias emacs='emacs -nw'
+
+# Emacs Alias
+alias ez='emacs ~/dotfiles/.zshrc && source ~/.zshrc'
+alias eg='emacs ~/dotfiles/.gitconfig && ssource ~/.gitconfig'
 
 # Eza Alias (better ls)
 # alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
