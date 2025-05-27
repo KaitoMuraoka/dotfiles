@@ -34,6 +34,7 @@ alias act='act --container-architecture linux/amd64'
 
 # NeoVim Alias
 alias n='nvim'
+alias nd='nvim ~/dotfiles/'
 alias nz='nvim ~/dotfiles/.zshrc && source ~/.zshrc'
 alias ng='nvim ~/dotfiles/.gitconfig && source ~/.gitconfig'
 alias nn='cd ~/.config/nvim && nvim .'
