@@ -3,7 +3,7 @@
 	email = kaitoboshi@icloud.com
 
 [core]
-	editor = emacs -nw -q
+	editor = nvim 
 	excludesfile = ~/.gitignore_global
 
 # git delta config
