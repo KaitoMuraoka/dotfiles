@@ -7,4 +7,5 @@
 .config/nvim
 # the fuck
 .config/thefuck/
-
+.config/github-copilot/
+.config/iterm2/

@@ -6,6 +6,12 @@ eval "$(oh-my-posh init zsh)"
 # the fuck
 eval "$(thefuck --alias)"
 
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+    autoload -Uz compinit
+    compinit
+fi
+
 # cd したらすぐにlsしてくれる
 chpwd(){
 	if [[ $(pwd) != $HOME ]]; then;
@@ -28,9 +34,11 @@ alias act='act --container-architecture linux/amd64'
 
 # NeoVim Alias
 alias n='nvim'
+alias nd='nvim ~/dotfiles/'
 alias nz='nvim ~/dotfiles/.zshrc && source ~/.zshrc'
 alias ng='nvim ~/dotfiles/.gitconfig && source ~/.gitconfig'
 alias nn='cd ~/.config/nvim && nvim .'
+
 alias pathcheck='echo $PATH'
 
 # note directory
@@ -52,6 +60,10 @@ alias freeze='freeze --show-line-numbers --window'
 
 # emacs no-window
 #alias emacs='emacs -nw'
+
+# Emacs Alias
+alias ez='emacs ~/dotfiles/.zshrc && source ~/.zshrc'
+alias eg='emacs ~/dotfiles/.gitconfig && ssource ~/.gitconfig'
 
 # Eza Alias (better ls)
 # alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
@@ -103,3 +115,4 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ## add zsh-autosuggestions
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+eval "$(rbenv init -)" # bash の場合は /Users/kaito/.bash_profile

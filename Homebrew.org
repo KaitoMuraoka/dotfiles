@@ -92,3 +92,9 @@ Ruby version manager
 #+begin_src shell
   brew install tree
 #+end_src
+
+** zsh-completions
+
+#+begin_src shell
+  brew install git zsh-completions
+#+end_src
