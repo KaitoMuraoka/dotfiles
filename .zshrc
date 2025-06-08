@@ -115,3 +115,4 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ## add zsh-autosuggestions
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+eval "$(rbenv init -)" # bash の場合は /Users/kaito/.bash_profile
