@@ -33,7 +33,8 @@
   logo = "log --oneline"
   delete-merged-branch = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|main'|xargs git branch -d; };f"
   copy-branch = "!f() { git branch --show-current | tr -d '\n' | pbcopy; echo 'Current branch name copied to clipboard.'; }; f"
-    pull-fetch = "!f() { git pull $1 $2 && git fetch $1 && git delete-merged-branch; }; f"
+  pull-fetch = "!f() { git pull $1 $2 && git fetch $1 && git delete-merged-branch; }; f"
+  review = "!f() { git checkout -b \"$1\" \"origin/$1\"; }; f \"$@\""
 
 [init]
 	defaultBranch = main
