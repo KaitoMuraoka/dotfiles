@@ -106,7 +106,9 @@ alias l="clear && ls"
 ## [/Completion]
 
 ## go
-export PATH=$PATH:$HOME/go/bin
+#export GOROOT=$(go1.24.1 env GOROOT)
+#export PATH=$GOROOT/bin:$PATH
+#export PATH=$PATH:~/go/bin
 
 ## node nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
