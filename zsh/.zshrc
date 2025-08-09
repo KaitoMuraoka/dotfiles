@@ -1,7 +1,10 @@
 export PATH=/opt/homebrew/bin:$PATH
 
-# oh-my-posh
-eval "$(oh-my-posh init zsh)"
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
 
 # the fuck
 eval "$(thefuck --alias)"
