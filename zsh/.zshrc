@@ -2,7 +2,12 @@ export PATH=/opt/homebrew/bin:$PATH
 
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
-plugins=(git)
+plugins=(
+	git
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+	web-search
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -113,9 +118,4 @@ export PATH=$PATH:$HOME/go/bin
 
 ## node nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
-
-## add zsh-syntax-highlighting
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-## add zsh-autosuggestions
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(rbenv init -)" # bash の場合は /Users/kaito/.bash_profile
