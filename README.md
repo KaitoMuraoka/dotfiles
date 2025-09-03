@@ -12,6 +12,13 @@ install tools from homebrew
 brew install git gh stow bat eza zoxide git-delta neovim tree
 ```
 
+install [im-select](https://github.com/daipeihust/im-select)
+
+```sh
+brew tap daipeihust/tap
+brew install im-select
+```
+
 install version manager
 ```sh
 brew install nodebrew # Node.js version manager
