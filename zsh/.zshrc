@@ -1,7 +1,15 @@
 export PATH=/opt/homebrew/bin:$PATH
 
-# oh-my-posh
-eval "$(oh-my-posh init zsh)"
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+plugins=(
+	git
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+	web-search
+)
+
+source $ZSH/oh-my-zsh.sh
 
 # the fuck
 eval "$(thefuck --alias)"
@@ -110,9 +118,4 @@ export PATH=$PATH:$HOME/go/bin
 
 ## node nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
-
-## add zsh-syntax-highlighting
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-## add zsh-autosuggestions
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(rbenv init -)" # bash の場合は /Users/kaito/.bash_profile
