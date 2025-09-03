@@ -59,6 +59,8 @@ alias cg='code ~/.gitconfig && source ~/.gitconfig'
 
 # Coteditor
 alias cot="open -a /Applications/CotEditor.app"
+# Fork (Git GUI App) alias
+alias fork="open -a /Applications/Fork.app"
 
 # Create SwiftCLI(SPM)
 alias createSwiftCLI='swift package init  --type executable --name'
