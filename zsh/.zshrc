@@ -7,6 +7,7 @@ plugins=(
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 	web-search
+  xcode
 )
 
 source $ZSH/oh-my-zsh.sh
