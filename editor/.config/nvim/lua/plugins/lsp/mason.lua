@@ -37,6 +37,7 @@ return {
         "prismals",
         "pyright",
         "eslint",
+        "ruby_lsp",
       }
     })
 

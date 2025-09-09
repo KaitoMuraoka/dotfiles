@@ -115,5 +115,11 @@ return {
         },
       },
     })
+
+    vim.lsp.enable('ruby_lsp', {
+    completion = {
+        callSnippet = "Replace"
+      },
+    })
   end,
 }
