@@ -38,4 +38,5 @@ Use `stow` command to link the contents:
 stow -v zsh
 stow -v editor
 stow -v git
+stow -v xcode
 ```
