@@ -35,6 +35,7 @@ brew install swiftformat swiftlint
 Use `stow` command to link the contents:
 
 ```sh
+cd ~/dotfiles/
 stow -v zsh
 stow -v editor
 stow -v git
