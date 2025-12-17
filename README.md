@@ -9,7 +9,7 @@ install homebrew
 
 install tools from homebrew
 ```sh
-brew install git gh stow bat eza zoxide git-delta neovim tree
+brew install git gh stow bat eza zoxide git-delta neovim tree fastfetch
 ```
 
 install go from homebrew
