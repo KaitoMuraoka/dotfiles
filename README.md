@@ -12,6 +12,11 @@ install tools from homebrew
 brew install git gh stow bat eza zoxide git-delta neovim tree
 ```
 
+install go from homebrew
+```sh
+brew install go
+```
+
 install [im-select](https://github.com/daipeihust/im-select)
 
 ```sh
