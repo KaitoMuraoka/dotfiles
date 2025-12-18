@@ -111,6 +111,33 @@ return {
     },
   },
 
+  -- go
+{
+    "neovim/nvim-lspconfig",
+    config = function()
+      local lspconfig = require('lspconfig')
+      
+      -- gopls（Go公式のLanguage Server）の設定
+      -- なぜ: VSCodeと同等のインテリジェント機能をNeovimでも使える
+      lspconfig.gopls.setup({
+        -- gopls固有の設定
+        settings = {
+          gopls = {
+            -- 未使用の変数やインポートを分析
+            -- なぜ: コードの品質向上とビルドエラーの事前検出
+            analyses = {
+              unusedparams = true,
+              shadow = true,
+            },
+            -- 静的解析の詳細度
+            -- なぜ: より詳細なコード解析でバグを早期発見
+            staticcheck = true,
+          },
+        },
+      })
+    end,
+}
+
   -- for typescript, LazyVim also includes extra specs to properly setup lspconfig,
   -- treesitter, mason and typescript.nvim. So instead of the above, you can use:
   { import = "lazyvim.plugins.extras.lang.typescript" },
@@ -121,6 +148,10 @@ return {
     opts = {
       ensure_installed = {
         "bash",
+        "go",
+        "gomod", -- go.mod専用
+        "gowork", -- go.work専用
+        "gosum", -- go.sum専用
         "html",
         "javascript",
         "json",
