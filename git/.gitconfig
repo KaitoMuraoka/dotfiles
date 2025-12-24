@@ -35,6 +35,7 @@
   copy-branch = "!f() { git branch --show-current | tr -d '\n' | pbcopy; echo 'Current branch name copied to clipboard.'; }; f"
   pull-fetch = "!f() { git pull $1 $2 && git fetch $1 && git delete-merged-branch; }; f"
   review = "!f() { git checkout -b \"$1\" \"origin/$1\"; }; f \"$@\""
+  delete-remote-branch = "!git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D"
 
 [init]
 	defaultBranch = main
