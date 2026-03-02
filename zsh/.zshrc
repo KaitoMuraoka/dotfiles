@@ -1,4 +1,3 @@
-export PATH=/opt/homebrew/bin:$PATH
 
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
@@ -132,7 +131,8 @@ alias l="clear && ls"
 ## [/Completion]
 
 ## go
-export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:/usr/local/go/bin
+alias fr="~/privateproduct/discipline-cli/frame"
 
 ## node nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
@@ -144,3 +144,13 @@ export NVM_DIR="$HOME/.nvm"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
+
+
+alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
+export EDITOR="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+export VISUAL="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"

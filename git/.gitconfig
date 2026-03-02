@@ -1,6 +1,6 @@
 [user]
 	name = KaitoMuraoka
-	email = kaitoboshi@icloud.com
+	email = 70003919+KaitoMuraoka@users.noreply.github.com
 
 [core]
 	editor = nvim 
@@ -36,6 +36,7 @@
   pull-fetch = "!f() { git pull $1 $2 && git fetch $1 && git delete-merged-branch; }; f"
   review = "!f() { git checkout -b \"$1\" \"origin/$1\"; }; f \"$@\""
   delete-remote-branch = "!git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D"
+  cof = !git branch -a | fzf | xargs git checkout
 
 [init]
 	defaultBranch = main
@@ -43,3 +44,10 @@
 	cmd = opendiff \"\" \"\" -ancestor \"\" -merge \"\"
 [mergetool]
 	prompt = false
+[safe]
+	directory = /private/etc/nix-darwin
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

@@ -4,7 +4,10 @@
 .zsh_history
 
 # Neovim
-.config/nvim
+.config/nvim/*
+editor/.config/nvim/*
+editor/.config/ghostty/*
+editor/.config/ghostty/
 # the fuck
 .config/thefuck/
 .config/github-copilot/
