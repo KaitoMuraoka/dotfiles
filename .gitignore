@@ -3,13 +3,11 @@
 # zsh
 .zsh_history
 
-# Neovim
-.config/nvim/*
-editor/.config/nvim/*
-editor/.config/ghostty/*
-editor/.config/ghostty/
 # the fuck
 .config/thefuck/
 .config/github-copilot/
 .config/iterm2/
 editor/.config/github-copilot/
+
+.config/nvim/
+.config/ghostty/
