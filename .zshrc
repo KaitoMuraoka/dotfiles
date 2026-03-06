@@ -152,4 +152,13 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 export EDITOR="nvim"
+############################################
+#  競技プログラミング用の設定 by Python
+############################################
+export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:$PATH"
 
+# AtCoder aliases
+alias actest='oj test -c "python3 main.py"'                      # テスト実行
+alias acsub='acc submit main.py'                                  # 提出
+alias acnew='acc new'                                             # コンテスト取得 例: acnew abc123
+alias aclogin='python3 ~/dotfiles/atcoder/inject_cookie.py'       # Cookieでログイン

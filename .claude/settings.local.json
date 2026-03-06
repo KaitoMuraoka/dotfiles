@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(acc config-dir:*)",
+      "Bash(python3:*)"
+    ]
+  }
+}
