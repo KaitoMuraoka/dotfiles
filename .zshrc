@@ -151,5 +151,5 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 
 
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
-export EDITOR="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
-export VISUAL="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+export EDITOR="nvim"
+
