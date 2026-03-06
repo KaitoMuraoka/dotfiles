@@ -13,11 +13,16 @@ aliases:
     co: pr checkout
     pr aicreate: |-
         !f() { \
-          BASE=${1:-$(gh repo view --json defaultBranchRef --jq ".defaultBranchRef.name" 2>/dev/null || echo "main")}; \
+          BASE=${1:-main}; \
           DIFF=$(git log $BASE..HEAD --oneline; echo "---"; git diff $BASE); \
+          TEMPLATE=$(cat .github/pull_request_template.md 2>/dev/null || cat .github/PULL_REQUEST_TEMPLATE.md 2>/dev/null || echo ""); \
           TITLE=$(claude --no-session-persistence --print "Based on these git changes, generate ONLY a one-line Pull Request title in Japanese. Output ONLY the title, nothing else.\n\n$DIFF"); \
-          BODY=$(claude --no-session-persistence --print "Based on these git changes, generate a Pull Request body in Japanese using markdown format. Include these sections: ## 変更内容, ## 変更理由, ## 備考. Output ONLY the body.\n\n$DIFF"); \
-          gh pr create --title "$TITLE" --body "$BODY" --base "$BASE" --web; \
+          if [ -n "$TEMPLATE" ]; then \
+            BODY=$(claude --no-session-persistence --print "Based on these git changes, generate a Pull Request body in Japanese. You MUST follow this PR template exactly:\n\n$TEMPLATE\n\nFill in each section based on the changes. Output ONLY the body.\n\n$DIFF"); \
+          else \
+            BODY=$(claude --no-session-persistence --print "Based on these git changes, generate a Pull Request body in Japanese using markdown format. Include these sections: ## 変更内容, ## 変更理由, ## 備考. Output ONLY the body.\n\n$DIFF"); \
+          fi; \
+          gh pr create --title "$TITLE" --body "$BODY" --web; \
         }; f
 # The path to a unix socket through which send HTTP connections. If blank, HTTP traffic will be handled by net/http.DefaultTransport.
 http_unix_socket:
