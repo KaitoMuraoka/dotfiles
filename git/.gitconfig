@@ -37,7 +37,7 @@
   review = "!f() { git checkout -b \"$1\" \"origin/$1\"; }; f \"$@\""
   delete-remote-branch = "!git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D"
   cof = !git branch -a | fzf | xargs git checkout
-  aicommit = "!f() { COMMITMSG=$(claude --no-session-persistence --print 'Generate ONLY a one-line Git commit message in Japanese using imperative mood. The message should summarize what was changed and why, based strictly on the contents of `git diff --cached`. DO NOT add an explanation or a body. Output ONLY the commit summary line.'); git commit -m \"$COMMITMSG\" -e; }; f"
+  aicommit = "!f() { COMMITMSG=$(claude --no-session-persistence --print 'Generate a Git commit message in Japanese based strictly on the contents of `git diff --cached`. Format it as follows: First line: a concise one-line summary. Then a blank line. Then a detailed bullet-point list explaining what was changed and why. Output ONLY the commit message, no extra explanation.'); git commit -m \"$COMMITMSG\" -e; }; f"
 
 [init]
 	defaultBranch = main
