@@ -3,7 +3,7 @@ version: 1
 # What protocol to use when performing git operations. Supported values: ssh, https
 git_protocol: https
 # What editor gh should run when creating issues, pull requests, etc. If blank, will refer to environment.
-editor: nvim 
+editor: nvim
 # When to interactively prompt. This is a global config that cannot be overridden by hostname. Supported values: enabled, disabled
 prompt: enabled
 # A pager program to send command output to, e.g. "less". If blank, will refer to environment. Set the value to "cat" to disable the pager.
@@ -11,6 +11,14 @@ pager:
 # Aliases allow you to create nicknames for gh commands
 aliases:
     co: pr checkout
+    pr aicreate: |-
+        !f() { \
+          BASE=${1:-$(gh repo view --json defaultBranchRef --jq ".defaultBranchRef.name" 2>/dev/null || echo "main")}; \
+          DIFF=$(git log $BASE..HEAD --oneline; echo "---"; git diff $BASE); \
+          TITLE=$(claude --no-session-persistence --print "Based on these git changes, generate ONLY a one-line Pull Request title in Japanese. Output ONLY the title, nothing else.\n\n$DIFF"); \
+          BODY=$(claude --no-session-persistence --print "Based on these git changes, generate a Pull Request body in Japanese using markdown format. Include these sections: ## 変更内容, ## 変更理由, ## 備考. Output ONLY the body.\n\n$DIFF"); \
+          gh pr create --title "$TITLE" --body "$BODY" --base "$BASE" --web; \
+        }; f
 # The path to a unix socket through which send HTTP connections. If blank, HTTP traffic will be handled by net/http.DefaultTransport.
 http_unix_socket:
 # What web browser gh should use when opening URLs. If blank, will refer to environment.
