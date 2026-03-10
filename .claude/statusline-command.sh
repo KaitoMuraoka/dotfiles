@@ -33,3 +33,4 @@ if [ -n "$used_pct" ]; then
     printf " \033[32mctx:%s%%\033[0m" "$used_int"
   fi
 fi
+
