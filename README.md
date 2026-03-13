@@ -60,6 +60,9 @@ mkdir -p ~/.config
 ln -sf ~/dotfiles/.config/bat ~/.config/bat
 ln -sf ~/dotfiles/.config/gh ~/.config/gh
 
+# Claude Code
+ln -sf ~/dotfiles/.claude ~/.claude
+
 # Xcode
 mkdir -p ~/Library/Developer/Xcode/UserData/KeyBindings
 ln -sf ~/dotfiles/xcode/Library/Developer/Xcode/UserData/KeyBindings/MyCustomKeyboard.idekeybindings ~/Library/Developer/Xcode/UserData/KeyBindings/MyCustomKeyboard.idekeybindings
