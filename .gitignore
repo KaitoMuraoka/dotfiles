@@ -11,3 +11,16 @@ editor/.config/github-copilot/
 
 .config/nvim/
 .config/ghostty/
+
+# Claude Code（履歴・セッション情報）
+.claude/projects/
+.claude/history.jsonl
+.claude/.session-env/
+.claude/backups/
+.claude/cache/
+.claude/debug/
+.claude/mcp-needs-auth-cache.json
+.claude/plugins/
+.claude/shell-snapshots/
+.claude/todos/
+.claude/file-history/
