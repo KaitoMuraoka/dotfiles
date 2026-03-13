@@ -2,5 +2,8 @@
   "statusLine": {
     "type": "command",
     "command": "sh $HOME/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "swift-lsp@claude-plugins-official": true
   }
 }
