@@ -24,3 +24,4 @@ editor/.config/github-copilot/
 .claude/shell-snapshots/
 .claude/todos/
 .claude/file-history/
+.claude/specs/work
