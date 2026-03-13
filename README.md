@@ -40,7 +40,13 @@ iOS 開発ツール:
 brew install swiftformat swiftlint
 ```
 
-### 4. シンボリックリンクの設定
+### 4. gh extension のインストール
+
+```sh
+gh extension install seachicken/gh-poi
+```
+
+### 5. シンボリックリンクの設定
 
 以下のコードブロックをコピーしてターミナルで実行すると、すべての設定ファイルがシンボリックリンクで同期されます。
 
