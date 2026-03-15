@@ -130,8 +130,7 @@ alias l="clear && ls"
 ## [/Completion]
 
 ## go
-export PATH=$PATH:/usr/local/go/bin
-alias fr="~/privateproduct/discipline-cli/frame"
+export PATH="$PATH:$(go env GOPATH)/bin"
 
 ## node nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
