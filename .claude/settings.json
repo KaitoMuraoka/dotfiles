@@ -5,5 +5,8 @@
   },
   "enabledPlugins": {
     "swift-lsp@claude-plugins-official": true
+  },
+  "env": {
+    "EDITOR": "emacsclient --nw"
   }
 }
