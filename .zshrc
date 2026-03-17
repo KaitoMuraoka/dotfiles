@@ -2,9 +2,9 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 # tmux プラグインの自動起動設定（plugins より前に記述する必要がある）
-ZSH_TMUX_AUTOSTART=true
-ZSH_TMUX_AUTOSTART_ONCE=true
-ZSH_TMUX_AUTOCONNECT=true
+ZSH_TMUX_AUTOSTART=false
+ZSH_TMUX_AUTOSTART_ONCE=false
+ZSH_TMUX_AUTOCONNECT=false
 
 plugins=(
 	git
