@@ -1,14 +1,25 @@
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
+
+# tmux プラグインの自動起動設定（plugins より前に記述する必要がある）
+ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART_ONCE=true
+ZSH_TMUX_AUTOCONNECT=true
+
 plugins=(
 	git
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 	web-search
-  xcode
+    xcode
+    tmux
+    emacs
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# claude-code のバックグラウンドアップグレード（cask パッケージのため --cask が必要）
+(brew upgrade claude-code &>/dev/null &)
 
 # the fuck
 eval "$(thefuck --alias)"
@@ -151,3 +162,10 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
+
+# Emacs デーモンの起動（未起動の場合のみ）
+# alias/PATH の設定後に実行しないと emacs コマンドが見つからない
+# pgrep -f でコマンドライン全体を検索し、デーモンモードで起動中かチェック
+if ! pgrep -f "emacs.*--daemon" > /dev/null 2>&1; then
+  /Applications/Emacs.app/Contents/MacOS/Emacs --daemon &>/dev/null &
+fi
