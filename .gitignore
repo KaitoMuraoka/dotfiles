@@ -25,3 +25,8 @@ editor/.config/github-copilot/
 .claude/todos/
 .claude/file-history/
 .claude/specs/work
+
+# Claude Code（マシン固有・自動生成）
+.claude/settings.local.json
+.claude/policy-limits.json
+.claude/sessions/
