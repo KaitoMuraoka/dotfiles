@@ -160,7 +160,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 
 
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
+# emacs コマンドで emacsclient を起動（デーモン経由で既存フレームに開く）
+alias emacs="$EMACS_CLIENT -n -a ''"
 export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
 
 # Emacs デーモンの起動（未起動の場合のみ）
