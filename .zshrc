@@ -84,21 +84,21 @@ alias freeze='freeze --show-line-numbers --window'
 export EMACS_BIN="/Applications/Emacs.app/Contents/MacOS/Emacs"
 export EMACS_CLIENT="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient"
 
-# 1. 現在開いているEmacsで開く (GUI)
-# すでに Emacs があればそれで開き、なければ新しく起動します
-alias e="$EMACS_CLIENT -n -a ''"
-
-# 2. 完全に「新しいウィンドウ（Frame）」としてEmacsを起動する (GUI)
-# 既存のウィンドウとは別に、もう一つウィンドウを作りたい時用
-alias en="$EMACS_CLIENT -n -c -a ''"
-
-# 3. ターミナルの中でEmacsを開く (CUI)
+# 1. ターミナルの中でEmacsを開く (CUI)
 # Vim (n) と同じように、ターミナル内で完結させたい時用
-alias et="$EMACS_BIN -nw"
+alias emacs="$EMACS_BIN -nw"
+
+# 2. emacsclientで現在開いているフレームで開く (GUI)
+# すでに Emacs があればそれで開き、なければ新しく起動します
+alias emacs-open="$EMACS_CLIENT -n -a ''"
+
+# 3. emacsclientで新しいウィンドウ（Frame）を作成して開く (GUI)
+# 既存のウィンドウとは別に、もう一つウィンドウを作りたい時用
+alias emacs-new="$EMACS_CLIENT -n -c -a ''"
 
 # 設定ファイル編集用（既存のものを整理）
-alias ez="e ~/.zshrc && source ~/.zshrc"
-alias ei="e ~/.emacs.d/init.el"
+alias ez="emacs-open ~/.zshrc && source ~/.zshrc"
+alias ei="emacs-open ~/.emacs.d/init.el"
 
 # Eza Alias (better ls)
 # alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
@@ -164,7 +164,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 
 
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
 
 # Emacs デーモンの自動起動（無効化中）
