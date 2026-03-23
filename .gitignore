@@ -25,6 +25,7 @@ editor/.config/github-copilot/
 .claude/todos/
 .claude/file-history/
 .claude/specs/work
+.claude/kiro/
 
 # Claude Code（マシン固有・自動生成）
 .claude/settings.local.json
