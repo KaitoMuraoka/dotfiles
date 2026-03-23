@@ -121,6 +121,10 @@ export PATH="$PATH:/Users/kaitomuraoka/.local/bin"
 
 # emacs alias
 alias emacsinit="cd ~/.emacs.d/ && emacs -nw init.el && emacs --batch -f batch-byte-compile init.el"
+# Emacsデーモンを起動する
+alias emacs-start="/Applications/Emacs.app/Contents/MacOS/Emacs --daemon &>/dev/null &"
+# Emacsデーモンをすべて終了する
+alias emacs-stop="pkill -f 'emacs.*--daemon'"
 
 # eza alias
 alias ei="eza --icons --git"
