@@ -45,7 +45,6 @@ alias c='clear' # clearと入力するのがだるい🥱
 # Git
 alias gs='git status'
 alias gc='git config user.name;git config user.email'
-alias allClean='git restore . && git restore --staged . && git clean -f .'
 
 # act
 alias act='act --container-architecture linux/amd64'

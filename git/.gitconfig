@@ -37,6 +37,8 @@
   review = "!f() { git checkout -b \"$1\" \"origin/$1\"; }; f \"$@\""
   delete-remote-branch = "!git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D"
   cof = !git branch -a | fzf | xargs git checkout
+  # ステージング・変更・未追跡ファイルをすべて元に戻す
+  clean-all = "!git restore --staged . && git restore . && git clean -f ."
   aicommit = "!f() { \
   if [ \"$1\" = \"--detail\" ]; then \
     COMMITMSG=$(claude --no-session-persistence --print 'Generate a Git commit message in Japanese based strictly on the contents of `git diff --cached`. Format it as follows: First line: a concise one-line summary. Then a blank line. Then a detailed bullet-point list explaining what was changed and why. Output ONLY the commit message, no extra explanation.'); \
