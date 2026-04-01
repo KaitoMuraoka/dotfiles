@@ -162,6 +162,7 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 
 # Emacs デーモンの起動（未起動の場合のみ）
 # alias/PATH の設定後に実行しないと emacs コマンドが見つからない
