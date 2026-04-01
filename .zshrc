@@ -78,27 +78,16 @@ alias createSwiftCLI='swift package init  --type executable --name'
 # freeze alias
 alias freeze='freeze --show-line-numbers --window'
 
-# --- Emacs Alias 決定版 ---
+# --- Emacs Alias ---
 
 # 共通変数（パスが長いので変数にまとめます）
 export EMACS_BIN="/Applications/Emacs.app/Contents/MacOS/Emacs"
-export EMACS_CLIENT="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient"
 
-# 1. 現在開いているEmacsで開く (GUI)
-# すでに Emacs があればそれで開き、なければ新しく起動します
-alias e="$EMACS_CLIENT -n -a ''"
-
-# 2. 完全に「新しいウィンドウ（Frame）」としてEmacsを起動する (GUI)
-# 既存のウィンドウとは別に、もう一つウィンドウを作りたい時用
-alias en="$EMACS_CLIENT -n -c -a ''"
-
-# 3. ターミナルの中でEmacsを開く (CUI)
-# Vim (n) と同じように、ターミナル内で完結させたい時用
+# ターミナルの中でEmacsを開く (CUI)
 alias et="$EMACS_BIN -nw"
 
-# 設定ファイル編集用（既存のものを整理）
-alias ez="e ~/.zshrc && source ~/.zshrc"
-alias ei="e ~/.emacs.d/init.el"
+# 設定ファイル編集用
+alias ez="$EMACS_BIN -nw ~/.zshrc && source ~/.zshrc"
 
 # Eza Alias (better ls)
 # alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
@@ -163,9 +152,3 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
 
-# Emacs デーモンの起動（未起動の場合のみ）
-# alias/PATH の設定後に実行しないと emacs コマンドが見つからない
-# pgrep -f でコマンドライン全体を検索し、デーモンモードで起動中かチェック
-if ! pgrep -f "emacs.*--daemon" > /dev/null 2>&1; then
-  /Applications/Emacs.app/Contents/MacOS/Emacs --daemon &>/dev/null &
-fi
