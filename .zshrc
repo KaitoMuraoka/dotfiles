@@ -140,6 +140,10 @@ alias l="clear && ls"
 [[ -f /Users/kaitomuraoka/.dart-cli-completion/zsh-config.zsh ]] && . /Users/kaitomuraoka/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
+# Android / Java
+export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
+export PATH="$JAVA_HOME/bin:$PATH"
+
 ## go
 export PATH="$PATH:$(go env GOPATH)/bin"
 
