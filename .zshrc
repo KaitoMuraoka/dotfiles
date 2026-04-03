@@ -140,6 +140,10 @@ alias l="clear && ls"
 [[ -f /Users/kaitomuraoka/.dart-cli-completion/zsh-config.zsh ]] && . /Users/kaitomuraoka/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
+# Android / Java
+export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
+export PATH="$JAVA_HOME/bin:$PATH"
+
 ## go
 export PATH="$PATH:$(go env GOPATH)/bin"
 
@@ -162,6 +166,7 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 
 # Emacs デーモンの起動（未起動の場合のみ）
 # alias/PATH の設定後に実行しないと emacs コマンドが見つからない
