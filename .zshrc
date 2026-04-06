@@ -159,7 +159,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$HOME/.rvm/bin"
 
 # fzf
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 
@@ -174,3 +174,13 @@ export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 if ! pgrep -f "emacs.*--daemon" > /dev/null 2>&1; then
   /Applications/Emacs.app/Contents/MacOS/Emacs --daemon &>/dev/null &
 fi
+# Ctrl+j で中断ジョブを一覧から fzf で選んで fg する
+fzf-fg() {
+  local job
+  job=$(jobs | fzf --height 40% --reverse --no-sort | grep -o '^\[[0-9]*\]' | tr -d '[]')
+  [[ -n "$job" ]] && fg %"$job"
+  zle reset-prompt
+}
+zle -N fzf-fg
+bindkey '^J' fzf-fg
+
