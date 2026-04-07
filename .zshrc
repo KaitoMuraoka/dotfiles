@@ -21,6 +21,10 @@ source $ZSH/oh-my-zsh.sh
 # claude-code のバックグラウンドアップグレード（cask パッケージのため --cask が必要）
 (brew upgrade claude-code &>/dev/null &)
 
+if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
+    source /Users/kaito.muraoka/.emacs.d/straight/repos/emacs-libvterm/etc/emacs-vterm-zsh.sh
+fi
+
 # the fuck
 eval "$(thefuck --alias)"
 
@@ -174,6 +178,7 @@ export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 if ! pgrep -f "emacs.*--daemon" > /dev/null 2>&1; then
   /Applications/Emacs.app/Contents/MacOS/Emacs --daemon &>/dev/null &
 fi
+
 # Ctrl+j で中断ジョブを一覧から fzf で選んで fg する
 fzf-fg() {
   local job
@@ -184,3 +189,4 @@ fzf-fg() {
 zle -N fzf-fg
 bindkey '^J' fzf-fg
 
+export PATH="$HOME/.local/bin:$PATH"
