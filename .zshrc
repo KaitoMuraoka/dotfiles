@@ -187,6 +187,6 @@ fzf-fg() {
   zle reset-prompt
 }
 zle -N fzf-fg
-bindkey '^J' fzf-fg
+bindkey '\ej' fzf-fg
 
 export PATH="$HOME/.local/bin:$PATH"
