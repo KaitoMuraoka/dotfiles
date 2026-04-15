@@ -168,16 +168,16 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 
 
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
-export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
+# alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
+# export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 
 # Emacs デーモンの起動（未起動の場合のみ）
 # alias/PATH の設定後に実行しないと emacs コマンドが見つからない
 # pgrep -f でコマンドライン全体を検索し、デーモンモードで起動中かチェック
-if ! pgrep -f "emacs.*--daemon" > /dev/null 2>&1; then
-  /Applications/Emacs.app/Contents/MacOS/Emacs --daemon &>/dev/null &
-fi
+# if ! pgrep -f "emacs.*--daemon" > /dev/null 2>&1; then
+#   /Applications/Emacs.app/Contents/MacOS/Emacs --daemon &>/dev/null &
+# fi
 
 # Ctrl+j で中断ジョブを一覧から fzf で選んで fg する
 fzf-fg() {
