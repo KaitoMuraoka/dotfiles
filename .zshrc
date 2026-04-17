@@ -125,7 +125,7 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 export PATH="$PATH:/Users/kaitomuraoka/.local/bin"
 
 # emacs alias
-alias emacsinit="cd ~/.emacs.d/ && emacs -nw init.el && emacs --batch -f batch-byte-compile init.el"
+alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 
 # eza alias
 alias ei="eza --icons --git"
@@ -191,3 +191,4 @@ zle -N fzf-fg
 bindkey '\ej' fzf-fg
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
