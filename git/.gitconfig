@@ -3,7 +3,7 @@
 	email = 70003919+KaitoMuraoka@users.noreply.github.com
 
 [core]
-    editor = emacsclient --nw
+    editor = emacsclient -c
 	excludesfile = ~/.gitignore_global
 
 # git delta config
@@ -29,6 +29,7 @@
     colorMoved = default
 
 [alias]
+  rebase-branch = "rebase -i $(git merge-base HEAD main)"
   emptycommit = "commit --allow-empty -m "空コミット""
   logo = "log --oneline"
   delete-merged-branch = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|main'|xargs git branch -d; };f"
