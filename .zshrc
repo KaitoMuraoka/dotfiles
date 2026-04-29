@@ -25,9 +25,6 @@ if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
     source /Users/kaito.muraoka/.emacs.d/straight/repos/emacs-libvterm/etc/emacs-vterm-zsh.sh
 fi
 
-# the fuck
-eval "$(thefuck --alias)"
-
 if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
     autoload -Uz compinit
