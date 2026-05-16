@@ -3,7 +3,8 @@
 	email = 70003919+KaitoMuraoka@users.noreply.github.com
 
 [core]
-    editor = emacsclient -c
+    #editor = emacsclient -c
+    editor = emacsclient
 	excludesfile = ~/.gitignore_global
 
 # git delta config
