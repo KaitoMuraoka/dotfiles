@@ -189,3 +189,8 @@ bindkey '\ej' fzf-fg
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
+if [[ $SHLVL -eq 1 && -z "$INSIDE_EMACS" && $- == *i* ]]; then
+    echo "Hello Zsh"
+    exec emacs -nw
+fi
+
