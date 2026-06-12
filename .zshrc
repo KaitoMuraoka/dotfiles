@@ -189,3 +189,10 @@ bindkey '\ej' fzf-fg
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/kaito.muraoka/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+if [ -f "$HOME/.zshrc.local" ]; then
+    source "$HOME/.zshrc.local"
+fi
