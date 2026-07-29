@@ -2,3 +2,4 @@ onboarding = false
 
 [ui]
 agent_panel_sort = "spaces"
+ui.toast.delivery = "system"
