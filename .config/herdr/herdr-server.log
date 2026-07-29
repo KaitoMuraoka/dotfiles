@@ -1,0 +1,997 @@
+2026-07-16T01:04:43.995947Z  INFO herdr::platform::macos: raised server file descriptor soft limit previous=2560 target=8192
+2026-07-16T01:04:43.996393Z  INFO herdr::api::server: api server listening path=/Users/kaito.muraoka/.config/herdr/herdr.sock
+2026-07-16T01:04:43.997270Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-07-16T01:04:44.016055Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T01:04:44.022142Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-07-16T01:04:44.024591Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=7722
+2026-07-16T01:04:44.024892Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w1" pane_id=1
+2026-07-16T01:04:44.024899Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-16T01:04:44.024953Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-16T01:04:44.024982Z  INFO herdr::server::headless: created startup workspace cwd=/Users/kaito.muraoka
+2026-07-16T01:04:44.025102Z  INFO herdr::server::headless: client protocol socket listening path=/Users/kaito.muraoka/.config/herdr/herdr-client.sock
+2026-07-16T01:04:44.025147Z  INFO herdr::server::headless: herdr server started api_socket=/Users/kaito.muraoka/.config/herdr/herdr.sock client_socket=/Users/kaito.muraoka/.config/herdr/herdr-client.sock
+2026-07-16T01:04:44.025160Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=7635
+2026-07-16T01:04:44.278454Z  INFO herdr::server::headless: client connected client_id=2 cols=137 rows=63 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-16T01:04:49.030681Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-16T01:05:35.040326Z  INFO herdr::pane: agent changed pane=1 previous_agent=None agent=Some(Claude) process=claude pgid=Some(8770)
+2026-07-16T01:05:58.379448Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=62 cols=111 scrollback_limit_bytes=10000000
+2026-07-16T01:05:58.386239Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=8895
+2026-07-16T01:05:58.387030Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-16T01:06:03.393369Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-16T01:06:25.933163Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=62 cols=56 scrollback_limit_bytes=10000000
+2026-07-16T01:06:25.940479Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=9413
+2026-07-16T01:06:25.940729Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-16T01:06:25.940883Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-16T01:06:30.945869Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-16T01:06:48.612489Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-16T01:06:53.618345Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-16T01:06:55.183496Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-16T01:06:56.651625Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-16T01:07:01.655055Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-16T01:07:09.822827Z  INFO herdr::server::headless: client detach requested via keybind client_id=2
+2026-07-16T01:07:09.826081Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-07-16T01:07:16.959766Z  INFO herdr::server::headless: client connected client_id=4 cols=137 rows=63 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-16T01:08:09.854646Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-16T01:09:13.410731Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-16T01:09:13.590327Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-16T01:09:13.784532Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-16T01:09:18.888855Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 1, signal: None }"
+2026-07-16T01:09:18.912098Z  INFO herdr::pane: pane session terminated pane=2 pid=8895 signal=Hangup
+2026-07-16T01:09:18.912478Z  WARN herdr::app::actions: PaneDied for unknown pane pane=2
+2026-07-16T01:09:22.398726Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 1, signal: None }"
+2026-07-16T01:09:22.963280Z  INFO herdr::pane: pane session terminated pane=1 pid=7722 signal=Kill
+2026-07-16T01:09:22.963663Z  WARN herdr::app::actions: PaneDied for unknown pane pane=1
+2026-07-16T01:09:27.967988Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-16T01:12:13.831246Z  INFO herdr::server::headless: client disconnected client_id=4
+2026-07-16T01:25:02.140683Z  INFO herdr::server::headless: client connected client_id=6 cols=137 rows=63 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-16T01:25:11.345709Z  INFO herdr::server::headless: client detach requested via keybind client_id=6
+2026-07-16T01:25:11.349208Z  INFO herdr::server::headless: client disconnected client_id=6
+2026-07-16T01:26:09.381409Z  INFO herdr::server::headless: server shutdown initiated
+2026-07-16T01:26:09.436540Z  INFO herdr::server::headless: completing server shutdown
+2026-07-16T01:26:09.438241Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-16T01:26:09.438280Z  INFO herdr::server::headless: headless server exiting
+2026-07-16T01:26:09.441667Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=3 status="ExitStatus { code: 1, signal: None }"
+2026-07-16T01:26:09.461701Z  INFO herdr::pane: pane session terminated pane=3 pid=9413 signal=Hangup
+2026-07-16T01:26:09.462690Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="server" outcome="completed" pid=7635
+2026-07-16T01:26:16.751320Z  INFO herdr::platform::macos: raised server file descriptor soft limit previous=2560 target=8192
+2026-07-16T01:26:16.751732Z  INFO herdr::api::server: api server listening path=/Users/kaito.muraoka/.config/herdr/herdr.sock
+2026-07-16T01:26:16.752506Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-07-16T01:26:16.755410Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=12052
+2026-07-16T01:26:16.755831Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-07-16T01:26:16.755850Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-07-16T01:26:16.781141Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T01:26:16.785971Z  INFO herdr::server::headless: restored session already has workspaces; ignoring startup cwd cwd=/Users/kaito.muraoka
+2026-07-16T01:26:16.786150Z  INFO herdr::server::headless: client protocol socket listening path=/Users/kaito.muraoka/.config/herdr/herdr-client.sock
+2026-07-16T01:26:16.786174Z  INFO herdr::server::headless: herdr server started api_socket=/Users/kaito.muraoka/.config/herdr/herdr.sock client_socket=/Users/kaito.muraoka/.config/herdr/herdr-client.sock
+2026-07-16T01:26:16.786189Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=12051
+2026-07-16T01:26:17.042997Z  INFO herdr::server::headless: client connected client_id=2 cols=137 rows=63 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-16T01:26:23.826906Z  INFO herdr::logging: integration action finished event="integration.action" subsystem="integration" outcome="ok" action="install" target="claude"
+2026-07-16T01:26:23.828135Z  INFO herdr::logging: integration action finished event="integration.action" subsystem="integration" outcome="ok" action="install" target="copilot"
+2026-07-16T01:26:28.834601Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-16T01:26:29.406145Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-16T01:27:20.110742Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=62 cols=111 scrollback_limit_bytes=10000000
+2026-07-16T01:27:20.115199Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=12892
+2026-07-16T01:27:20.115493Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w2" pane_id=2
+2026-07-16T01:27:20.115502Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-16T01:27:20.115549Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-16T01:27:25.122069Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-16T01:27:54.139207Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-16T01:27:54.139357Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-16T01:27:59.145739Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-16T01:32:02.832214Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-07-16T01:56:16.786658Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T02:26:16.670222Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T02:56:16.767385Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T03:26:16.688546Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T03:56:14.778588Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T04:26:16.755571Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T04:56:16.807926Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T05:26:16.807850Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T05:56:14.812721Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T06:26:14.824487Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T06:56:16.756183Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T07:26:16.760490Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T07:56:16.865283Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T08:26:16.754728Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T09:02:11.404899Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T09:32:11.408096Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-16T11:07:38.380184Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-17T01:02:14.125285Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-17T01:32:16.128714Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-17T02:02:16.219202Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-17T02:32:16.182564Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-17T03:02:16.181009Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-17T03:32:16.104725Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-17T04:02:16.075902Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-17T04:32:14.174335Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-17T05:02:16.183330Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-17T05:32:16.186941Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-17T06:02:16.190290Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-17T06:32:16.106080Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-17T07:08:58.452049Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-17T07:38:58.646339Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-17T08:08:58.581789Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-17T08:38:58.535213Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-17T09:12:55.374665Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T01:31:27.152756Z  INFO herdr::platform::macos: raised server file descriptor soft limit previous=2560 target=8192
+2026-07-27T01:31:27.153973Z  INFO herdr::api::server: api server listening path=/Users/kaito.muraoka/.config/herdr/herdr.sock
+2026-07-27T01:31:27.155831Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-07-27T01:31:27.159578Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=5554
+2026-07-27T01:31:27.160198Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-07-27T01:31:27.162093Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=5555
+2026-07-27T01:31:27.162351Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=2
+2026-07-27T01:31:27.162420Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-07-27T01:31:27.189807Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T01:31:27.193830Z  INFO herdr::server::headless: restored session already has workspaces; ignoring startup cwd cwd=/Users/kaito.muraoka/product/ios/tunag-ios
+2026-07-27T01:31:27.193999Z  INFO herdr::server::headless: client protocol socket listening path=/Users/kaito.muraoka/.config/herdr/herdr-client.sock
+2026-07-27T01:31:27.194036Z  INFO herdr::server::headless: herdr server started api_socket=/Users/kaito.muraoka/.config/herdr/herdr.sock client_socket=/Users/kaito.muraoka/.config/herdr/herdr-client.sock
+2026-07-27T01:31:27.194050Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=5553
+2026-07-27T01:31:27.359910Z  INFO herdr::logging: update available event="update.available" subsystem="update" outcome="ok" version="0.7.5"
+2026-07-27T01:31:27.411244Z  INFO herdr::update: auto-update check: v0.7.5 available through Homebrew, waiting for explicit install
+2026-07-27T01:31:27.411614Z  INFO herdr::server::headless: client connected client_id=2 cols=137 rows=63 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-27T01:31:48.306699Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T01:31:56.331127Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-27T01:31:56.331378Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-27T01:31:57.335016Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-27T01:31:57.335210Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-27T01:31:57.935173Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-27T01:31:57.935471Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-27T01:32:07.801047Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T01:33:06.479235Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-07-27T02:09:34.100731Z  INFO herdr::platform::macos: raised server file descriptor soft limit previous=256 target=8192
+2026-07-27T02:09:34.102387Z  INFO herdr::api::server: api server listening path=/Users/kaito.muraoka/.config/herdr/herdr.sock
+2026-07-27T02:09:34.106684Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-07-27T02:09:34.111449Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=13362
+2026-07-27T02:09:34.112592Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-07-27T02:09:34.114414Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=13363
+2026-07-27T02:09:34.114777Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=2
+2026-07-27T02:09:34.114828Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-07-27T02:09:34.142518Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T02:09:34.149364Z  INFO herdr::server::headless: restored session already has workspaces; ignoring startup cwd cwd=/Users/kaito.muraoka/product/web
+2026-07-27T02:09:34.149863Z  INFO herdr::server::headless: client protocol socket listening path=/Users/kaito.muraoka/.config/herdr/herdr-client.sock
+2026-07-27T02:09:34.149910Z  INFO herdr::server::headless: herdr server started api_socket=/Users/kaito.muraoka/.config/herdr/herdr.sock client_socket=/Users/kaito.muraoka/.config/herdr/herdr-client.sock
+2026-07-27T02:09:34.149924Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=13361
+2026-07-27T02:09:34.176753Z  INFO herdr::logging: update available event="update.available" subsystem="update" outcome="ok" version="0.7.5"
+2026-07-27T02:09:34.232862Z  INFO herdr::update: auto-update check: v0.7.5 available through Homebrew, waiting for explicit install
+2026-07-27T02:09:34.233254Z  INFO herdr::server::headless: client connected client_id=2 cols=274 rows=62 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-27T02:25:30.700098Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-27T02:25:30.701300Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 1, signal: None }"
+2026-07-27T02:25:30.725483Z  INFO herdr::pane: pane session terminated pane=2 pid=13363 signal=Hangup
+2026-07-27T02:25:30.725894Z  WARN herdr::app::actions: PaneDied for unknown pane pane=2
+2026-07-27T02:25:34.033076Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-27T02:25:34.034978Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 1, signal: None }"
+2026-07-27T02:25:34.058638Z  INFO herdr::pane: pane session terminated pane=1 pid=13362 signal=Hangup
+2026-07-27T02:25:34.058802Z  WARN herdr::app::actions: PaneDied for unknown pane pane=1
+2026-07-27T02:25:34.058927Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=61 cols=248 scrollback_limit_bytes=10000000
+2026-07-27T02:25:34.063415Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=17795
+2026-07-27T02:25:34.063633Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w3" pane_id=3
+2026-07-27T02:25:34.063644Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-27T02:25:34.063720Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:25:39.079183Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:26:47.800738Z  INFO herdr::server::headless: client detach requested via keybind client_id=2
+2026-07-27T02:26:47.803688Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-07-27T02:26:56.026138Z  INFO herdr::server::headless: server shutdown initiated
+2026-07-27T02:26:56.081213Z  INFO herdr::server::headless: completing server shutdown
+2026-07-27T02:26:56.082293Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:26:56.082323Z  INFO herdr::server::headless: headless server exiting
+2026-07-27T02:26:56.083829Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=3 status="ExitStatus { code: 1, signal: None }"
+2026-07-27T02:26:56.105214Z  INFO herdr::pane: pane session terminated pane=3 pid=17795 signal=Hangup
+2026-07-27T02:26:56.106239Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="server" outcome="completed" pid=13361
+2026-07-27T02:27:40.920455Z  INFO herdr::platform::macos: raised server file descriptor soft limit previous=256 target=8192
+2026-07-27T02:27:40.920996Z  INFO herdr::api::server: api server listening path=/Users/kaito.muraoka/.config/herdr/herdr.sock
+2026-07-27T02:27:40.921475Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-07-27T02:27:40.924476Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=18392
+2026-07-27T02:27:40.924748Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-07-27T02:27:40.924770Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-07-27T02:27:40.952278Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T02:27:40.956938Z  INFO herdr::server::headless: restored session already has workspaces; ignoring startup cwd cwd=/Users/kaito.muraoka/product/web
+2026-07-27T02:27:40.957156Z  INFO herdr::server::headless: client protocol socket listening path=/Users/kaito.muraoka/.config/herdr/herdr-client.sock
+2026-07-27T02:27:40.957196Z  INFO herdr::server::headless: herdr server started api_socket=/Users/kaito.muraoka/.config/herdr/herdr.sock client_socket=/Users/kaito.muraoka/.config/herdr/herdr-client.sock
+2026-07-27T02:27:40.957230Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=18391
+2026-07-27T02:27:40.988284Z  INFO herdr::logging: update available event="update.available" subsystem="update" outcome="ok" version="0.7.5"
+2026-07-27T02:27:41.036110Z  INFO herdr::update: auto-update check: v0.7.5 available through Homebrew, waiting for explicit install
+2026-07-27T02:27:41.036516Z  INFO herdr::server::headless: client connected client_id=2 cols=274 rows=62 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-27T02:28:48.115053Z  INFO herdr::server::headless: client detach requested via keybind client_id=2
+2026-07-27T02:28:48.118585Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-07-27T02:29:25.631342Z  INFO herdr::server::headless: server shutdown initiated
+2026-07-27T02:29:25.686485Z  INFO herdr::server::headless: completing server shutdown
+2026-07-27T02:29:25.687614Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:29:25.687645Z  INFO herdr::server::headless: headless server exiting
+2026-07-27T02:29:25.689302Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 1, signal: None }"
+2026-07-27T02:29:25.712183Z  INFO herdr::pane: pane session terminated pane=1 pid=18392 signal=Hangup
+2026-07-27T02:29:25.713063Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="server" outcome="completed" pid=18391
+2026-07-27T02:29:27.634359Z  INFO herdr::platform::macos: raised server file descriptor soft limit previous=256 target=8192
+2026-07-27T02:29:27.634926Z  INFO herdr::api::server: api server listening path=/Users/kaito.muraoka/.config/herdr/herdr.sock
+2026-07-27T02:29:27.636189Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-07-27T02:29:27.638867Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=20532
+2026-07-27T02:29:27.639141Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-07-27T02:29:27.639164Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-07-27T02:29:27.662325Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T02:29:27.666850Z  INFO herdr::server::headless: restored session already has workspaces; ignoring startup cwd cwd=/Users/kaito.muraoka/product/web
+2026-07-27T02:29:27.667132Z  INFO herdr::server::headless: client protocol socket listening path=/Users/kaito.muraoka/.config/herdr/herdr-client.sock
+2026-07-27T02:29:27.667204Z  INFO herdr::server::headless: herdr server started api_socket=/Users/kaito.muraoka/.config/herdr/herdr.sock client_socket=/Users/kaito.muraoka/.config/herdr/herdr-client.sock
+2026-07-27T02:29:27.667974Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=20531
+2026-07-27T02:29:27.924677Z  INFO herdr::server::headless: client connected client_id=2 cols=274 rows=62 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-27T02:29:38.654407Z  INFO herdr::server::headless: client resize client_id=2 cols=274 rows=63 cell_width_px=0 cell_height_px=0
+2026-07-27T02:30:22.798318Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=62 cols=248 scrollback_limit_bytes=10000000
+2026-07-27T02:30:22.804808Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=21354
+2026-07-27T02:30:22.805211Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:30:27.810343Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:30:41.067088Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:30:42.777965Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:30:47.784536Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:30:55.421412Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=62 cols=124 scrollback_limit_bytes=10000000
+2026-07-27T02:30:55.427432Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=21879
+2026-07-27T02:30:55.428170Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:31:00.434819Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:31:20.198552Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=4 rows=62 cols=124 scrollback_limit_bytes=10000000
+2026-07-27T02:31:20.205652Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=4 pid=22417
+2026-07-27T02:31:20.206079Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:31:20.206261Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:31:25.209307Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:31:30.128629Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:31:32.005215Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:31:37.012860Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:31:37.803662Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=5 rows=62 cols=248 scrollback_limit_bytes=10000000
+2026-07-27T02:31:37.811381Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=5 pid=22916
+2026-07-27T02:31:37.812015Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:31:42.816002Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:31:45.849035Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:31:50.853945Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:31:51.090441Z  INFO herdr::pane: agent changed pane=4 previous_agent=None agent=Some(Claude) process=claude pgid=Some(23450)
+2026-07-27T02:31:56.149430Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:31:57.953816Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:32:02.957769Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:32:05.513136Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:32:10.439406Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:32:12.266808Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:32:14.350325Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:32:16.790191Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:32:21.795500Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:32:47.677620Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:32:52.683539Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:33:20.045439Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-27T02:33:24.726652Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-27T02:34:01.177380Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:34:06.181079Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:34:24.411026Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:34:29.419301Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:34:33.563055Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:34:38.567623Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:35:40.837032Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:35:42.755159Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:35:47.762847Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:35:51.306285Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:35:54.966655Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:35:56.512244Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:35:59.118053Z  INFO herdr::pane: agent changed pane=1 previous_agent=None agent=Some(Claude) process=claude pgid=Some(23938)
+2026-07-27T02:36:03.957056Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:36:06.099879Z  INFO herdr::pane: agent changed pane=1 previous_agent=Some(Claude) agent=None pgid=Some(20532)
+2026-07-27T02:36:10.801475Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:36:35.091973Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:36:40.109506Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:36:47.060107Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:36:52.065327Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:36:54.109340Z  INFO herdr::pane: agent changed pane=5 previous_agent=None agent=Some(Claude) process=claude pgid=Some(24077)
+2026-07-27T02:36:59.230411Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:37:44.390801Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:37:49.144786Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:37:54.150685Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:37:55.489819Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:38:00.497637Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:38:18.485769Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:38:23.491250Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:39:35.466302Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:39:40.470071Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:39:41.868432Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-27T02:39:41.868703Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:39:42.080852Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-27T02:39:42.081093Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T02:39:47.083364Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:39:58.057922Z  INFO herdr::logging: workspace renamed event="workspace.rename" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-27T02:40:03.061589Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:40:07.533118Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:40:12.536500Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:40:47.674505Z  INFO herdr::server::headless: client resize client_id=2 cols=274 rows=62 cell_width_px=0 cell_height_px=0
+2026-07-27T02:45:57.460292Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:46:02.465350Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:46:07.115173Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:46:12.119337Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:46:16.642454Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:46:21.648372Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:46:22.504269Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T02:46:26.701191Z  INFO herdr::server::headless: client resize client_id=2 cols=216 rows=55 cell_width_px=0 cell_height_px=0
+2026-07-27T02:46:27.511159Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T02:59:27.661840Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T03:08:17.750072Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T03:08:22.757394Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T03:09:56.798761Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T03:10:01.806861Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T03:27:40.794559Z  INFO herdr::server::headless: client resize client_id=2 cols=274 rows=62 cell_width_px=0 cell_height_px=0
+2026-07-27T03:30:10.266474Z  INFO herdr::server::headless: client resize client_id=2 cols=216 rows=55 cell_width_px=0 cell_height_px=0
+2026-07-27T03:30:12.546635Z  INFO herdr::server::headless: client resize client_id=2 cols=274 rows=62 cell_width_px=0 cell_height_px=0
+2026-07-27T03:32:40.514316Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T03:32:52.688822Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T03:32:57.691429Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T03:45:03.239836Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T04:15:03.293021Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T04:45:03.318136Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T04:48:54.361394Z  INFO herdr::server::headless: client resize client_id=2 cols=249 rows=62 cell_width_px=0 cell_height_px=0
+2026-07-27T04:48:54.464095Z  INFO herdr::server::headless: client resize client_id=2 cols=229 rows=62 cell_width_px=0 cell_height_px=0
+2026-07-27T04:48:54.564531Z  INFO herdr::server::headless: client resize client_id=2 cols=224 rows=62 cell_width_px=0 cell_height_px=0
+2026-07-27T04:50:48.876371Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T04:50:53.884467Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T04:52:41.677009Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T04:52:46.681804Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T04:53:12.832069Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T04:53:16.295707Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T04:53:19.940089Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T04:53:24.942969Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T04:53:25.957649Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T04:53:30.960631Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T04:53:33.984748Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T04:53:38.990699Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T04:53:57.817393Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T04:54:02.824891Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T04:55:00.803805Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T04:55:02.810039Z  INFO herdr::pane: agent changed pane=5 previous_agent=Some(Claude) agent=None pgid=Some(22916)
+2026-07-27T04:55:07.514881Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T04:55:34.087842Z  INFO herdr::pane: agent changed pane=5 previous_agent=None agent=Some(Claude) process=claude pgid=Some(24077)
+2026-07-27T04:55:47.318890Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T04:55:51.891958Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T04:55:54.697301Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T04:55:59.703114Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T04:56:29.363040Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T04:56:34.368271Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T04:56:38.693691Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T04:58:56.933161Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T04:59:01.942233Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T04:59:11.417409Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T04:59:16.422499Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T04:59:44.830650Z  INFO herdr::pane: agent changed pane=5 previous_agent=Some(Claude) agent=None pgid=Some(22916)
+2026-07-27T04:59:54.415755Z  INFO herdr::pane: agent changed pane=5 previous_agent=None agent=Some(Claude) process=claude pgid=Some(24077)
+2026-07-27T05:00:02.413042Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T05:00:09.346040Z  INFO herdr::pane: agent changed pane=5 previous_agent=Some(Claude) agent=None pgid=Some(22916)
+2026-07-27T05:00:12.370039Z  INFO herdr::pane: agent changed pane=5 previous_agent=None agent=Some(Claude) process=claude pgid=Some(24077)
+2026-07-27T05:00:45.607023Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:00:50.612418Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:00:59.077367Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:01:04.081236Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:04:28.432643Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:04:33.440091Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:05:14.860293Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:05:16.389503Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:05:21.395769Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:05:22.728463Z  INFO herdr::pane: agent changed pane=4 previous_agent=Some(Claude) agent=None pgid=Some(22417)
+2026-07-27T05:05:27.268630Z  INFO herdr::pane: agent changed pane=4 previous_agent=None agent=Some(Claude) process=claude pgid=Some(23450)
+2026-07-27T05:05:27.430284Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:05:46.616758Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:05:51.622083Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:05:58.436747Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:06:01.545872Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T05:06:03.439842Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:06:17.288042Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:06:22.291915Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:06:42.855980Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T05:06:43.796939Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T05:06:47.085799Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T05:06:47.261811Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T05:06:51.131518Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T05:07:01.885996Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:07:04.674833Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:07:05.187896Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T05:07:09.685697Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:07:12.897634Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T05:10:48.818019Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:10:50.691900Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:10:55.695292Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:15:03.293334Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T05:27:24.906357Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:27:29.913405Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:27:49.241363Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T05:27:52.736856Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T05:27:57.743722Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:27:57.880976Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T05:28:02.885371Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:28:40.721813Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T05:29:00.554441Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T05:29:05.557090Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:29:58.798284Z  INFO herdr::server::headless: client resize client_id=2 cols=232 rows=62 cell_width_px=0 cell_height_px=0
+2026-07-27T05:29:58.898711Z  INFO herdr::server::headless: client resize client_id=2 cols=239 rows=62 cell_width_px=0 cell_height_px=0
+2026-07-27T05:31:38.132361Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:31:43.135192Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:32:00.274335Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:32:05.280109Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:32:39.848122Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:32:44.855417Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:33:04.534968Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:33:09.540683Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:33:13.399237Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T05:33:18.402409Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T05:45:03.304402Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T05:45:04.665715Z  INFO herdr::server::headless: client resize client_id=2 cols=247 rows=62 cell_width_px=0 cell_height_px=0
+2026-07-27T05:45:04.764087Z  INFO herdr::server::headless: client resize client_id=2 cols=261 rows=62 cell_width_px=0 cell_height_px=0
+2026-07-27T05:45:04.864128Z  INFO herdr::server::headless: client resize client_id=2 cols=274 rows=62 cell_width_px=0 cell_height_px=0
+2026-07-27T05:45:06.001218Z  INFO herdr::server::headless: client resize client_id=2 cols=274 rows=70 cell_width_px=0 cell_height_px=0
+2026-07-27T05:46:07.980486Z  INFO herdr::server::headless: client resize client_id=2 cols=274 rows=62 cell_width_px=0 cell_height_px=0
+2026-07-27T05:46:16.655250Z  INFO herdr::server::headless: client resize client_id=2 cols=274 rows=70 cell_width_px=0 cell_height_px=0
+2026-07-27T05:46:36.367475Z  INFO herdr::server::headless: client resize client_id=2 cols=274 rows=62 cell_width_px=0 cell_height_px=0
+2026-07-27T05:49:05.599176Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T05:55:23.001428Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T05:59:51.618763Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T06:15:03.309694Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T06:37:22.249333Z  INFO herdr::server::headless: client resize client_id=2 cols=274 rows=55 cell_width_px=0 cell_height_px=0
+2026-07-27T06:38:58.954201Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T06:39:03.960679Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-27T06:45:10.344408Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T07:15:45.412512Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T07:36:31.890333Z  INFO herdr::server::headless: client resize client_id=2 cols=274 rows=62 cell_width_px=0 cell_height_px=0
+2026-07-27T07:37:08.067825Z  INFO herdr::server::headless: client resize client_id=2 cols=274 rows=55 cell_width_px=0 cell_height_px=0
+2026-07-27T07:37:08.485382Z  INFO herdr::server::headless: client resize client_id=2 cols=274 rows=62 cell_width_px=0 cell_height_px=0
+2026-07-27T07:46:33.879390Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T07:47:57.856621Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T07:49:04.405487Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T07:49:07.455233Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=6 rows=61 cols=124 scrollback_limit_bytes=10000000
+2026-07-27T07:49:07.460180Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=6 pid=98752
+2026-07-27T07:49:07.460402Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w4" pane_id=6
+2026-07-27T07:49:07.460420Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-07-27T07:49:07.460542Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-07-27T07:49:12.466387Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T07:49:30.057376Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=7 rows=61 cols=248 scrollback_limit_bytes=10000000
+2026-07-27T07:49:30.064105Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=7 pid=99270
+2026-07-27T07:49:30.064354Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
+2026-07-27T07:49:30.064450Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
+2026-07-27T07:49:35.068725Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T07:49:39.674388Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=8 rows=61 cols=248 scrollback_limit_bytes=10000000
+2026-07-27T07:49:39.679252Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=8 pid=99767
+2026-07-27T07:49:39.679670Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
+2026-07-27T07:49:43.275705Z  INFO herdr::pane: agent changed pane=8 previous_agent=None agent=Some(Claude) process=claude pgid=Some(441)
+2026-07-27T07:49:43.991090Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
+2026-07-27T07:49:45.737053Z  INFO herdr::pane: agent changed pane=7 previous_agent=None agent=Some(Claude) process=claude pgid=Some(513)
+2026-07-27T07:49:50.184042Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-07-27T07:49:50.184220Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
+2026-07-27T07:49:50.320568Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-07-27T07:49:50.320732Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
+2026-07-27T07:49:55.326745Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T07:49:59.308923Z  INFO herdr::logging: workspace renamed event="workspace.rename" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-07-27T07:50:04.312585Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T07:50:37.560177Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-07-27T07:50:42.565147Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T07:51:07.220626Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
+2026-07-27T07:51:12.225944Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T07:51:18.031993Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-07-27T07:51:23.035555Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T07:51:34.262996Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
+2026-07-27T07:51:39.266161Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T07:51:41.801470Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
+2026-07-27T07:51:46.805815Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T07:51:49.869461Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
+2026-07-27T07:51:54.505880Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
+2026-07-27T07:51:59.507698Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T07:52:00.925384Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
+2026-07-27T07:52:05.926874Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T07:53:21.941524Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-27T07:53:21.941571Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T07:53:26.945314Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T08:09:37.131779Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-27T08:09:37.132579Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T08:09:42.135867Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T08:11:00.071747Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T08:11:07.531297Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T08:16:33.922474Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T08:17:31.369507Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T08:17:36.379884Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T08:46:33.947249Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T08:56:31.186091Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T08:56:34.784349Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T08:56:39.790592Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T08:56:45.028894Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T08:56:50.034964Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T08:57:16.709598Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T08:57:21.715540Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T08:58:00.523613Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-27T08:58:05.531019Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T08:58:39.614959Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T08:58:44.102682Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T08:58:44.617404Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T08:58:51.410889Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T08:59:02.681182Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T09:10:33.721332Z  INFO herdr::pane: agent changed pane=4 previous_agent=Some(Claude) agent=None pgid=Some(22417)
+2026-07-27T09:10:38.421317Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T09:11:02.978895Z  INFO herdr::pane: agent changed pane=4 previous_agent=None agent=Some(Claude) process=claude pgid=Some(23450)
+2026-07-27T09:16:33.917836Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T09:17:01.960419Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T09:17:03.690217Z  INFO herdr::pane: agent changed pane=5 previous_agent=Some(Claude) agent=None pgid=Some(22916)
+2026-07-27T09:17:08.393399Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T09:17:33.134997Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T09:17:35.850344Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T09:19:16.476478Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T09:19:21.480050Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T09:29:01.287261Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T09:29:01.954603Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T09:29:06.962494Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T09:41:39.160696Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T09:41:44.170294Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T09:46:33.988768Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T09:51:12.974017Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T09:51:51.107409Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T09:53:00.990153Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T09:53:05.993712Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T09:56:13.394673Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T09:56:13.943982Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T09:56:14.635415Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T09:56:18.948731Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T09:57:05.817135Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T09:57:07.319784Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T09:57:10.886582Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T09:57:23.273550Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T09:57:28.278466Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T10:00:02.912081Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T10:00:07.922697Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T10:04:47.438539Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T10:04:50.262037Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T10:04:52.442293Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T10:09:51.497436Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T10:09:56.505778Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T10:11:33.070643Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T10:11:39.468977Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T10:11:44.473294Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T10:15:02.411768Z  INFO herdr::server::headless: client resize client_id=2 cols=274 rows=70 cell_width_px=0 cell_height_px=0
+2026-07-27T10:16:33.985886Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T10:17:26.151355Z  INFO herdr::server::headless: client resize client_id=2 cols=216 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-27T10:19:00.437387Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T10:19:05.447969Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T10:19:31.979552Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T10:19:36.989700Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T10:19:44.427800Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T10:19:49.431977Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T10:28:57.155004Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T10:29:02.164191Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T10:30:58.232575Z  INFO herdr::pane: agent changed pane=5 previous_agent=None agent=Some(Claude) process=claude pgid=Some(23888)
+2026-07-27T10:31:00.357108Z  INFO herdr::pane: agent changed pane=5 previous_agent=Some(Claude) agent=None pgid=Some(22916)
+2026-07-27T10:31:05.061871Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T10:31:11.960749Z  INFO herdr::pane: agent changed pane=5 previous_agent=None agent=Some(Claude) process=claude pgid=Some(23888)
+2026-07-27T10:32:36.781356Z  INFO herdr::pane: agent changed pane=5 previous_agent=Some(Claude) agent=None pgid=Some(22916)
+2026-07-27T10:33:01.017712Z  INFO herdr::pane: agent changed pane=5 previous_agent=None agent=Some(Claude) process=claude pgid=Some(23888)
+2026-07-27T10:39:38.336098Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T10:39:41.563161Z  INFO herdr::pane: agent changed pane=5 previous_agent=Some(Claude) agent=None pgid=Some(22916)
+2026-07-27T10:45:48.903617Z  INFO herdr::pane: agent changed pane=5 previous_agent=None agent=Some(Claude) process=claude pgid=Some(23888)
+2026-07-27T10:46:33.990979Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-27T10:48:38.684036Z  INFO herdr::pane: agent changed pane=5 previous_agent=Some(Claude) agent=None pgid=Some(22916)
+2026-07-27T10:48:53.304079Z  INFO herdr::pane: agent changed pane=5 previous_agent=None agent=Some(Claude) process=claude pgid=Some(23888)
+2026-07-27T10:56:31.601623Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-27T10:56:34.223294Z  INFO herdr::pane: agent changed pane=5 previous_agent=Some(Claude) agent=None pgid=Some(22916)
+2026-07-27T10:57:19.109269Z  INFO herdr::pane: agent changed pane=5 previous_agent=None agent=Some(Claude) process=claude pgid=Some(28870)
+2026-07-27T10:57:23.978652Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T10:57:25.491685Z  INFO herdr::pane: agent changed pane=5 previous_agent=Some(Claude) agent=None pgid=Some(22916)
+2026-07-27T10:57:30.190143Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T10:57:30.525546Z  INFO herdr::pane: agent changed pane=5 previous_agent=None agent=Some(Claude) process=claude pgid=Some(28959)
+2026-07-27T10:57:35.588365Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T11:02:31.535304Z  INFO herdr::pane: agent changed pane=5 previous_agent=Some(Claude) agent=None pgid=Some(22916)
+2026-07-27T11:02:36.234502Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T11:03:12.873155Z  INFO herdr::pane: agent changed pane=5 previous_agent=None agent=Some(Claude) process=claude pgid=Some(28959)
+2026-07-27T11:03:21.697445Z  INFO herdr::pane: agent changed pane=5 previous_agent=Some(Claude) agent=None pgid=Some(22916)
+2026-07-27T11:03:36.819350Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-27T11:03:44.406679Z  INFO herdr::pane: agent changed pane=5 previous_agent=None agent=Some(Claude) process=claude pgid=Some(28959)
+2026-07-27T11:03:58.704550Z  INFO herdr::pane: agent changed pane=5 previous_agent=Some(Claude) agent=None pgid=Some(22916)
+2026-07-27T11:04:02.713363Z  INFO herdr::server::headless: client resize client_id=2 cols=107 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-27T11:04:18.893014Z  INFO herdr::pane: agent changed pane=5 previous_agent=None agent=Some(Claude) process=claude pgid=Some(28959)
+2026-07-27T11:04:38.160828Z  INFO herdr::server::headless: client resize client_id=2 cols=121 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-27T11:04:38.265082Z  INFO herdr::server::headless: client resize client_id=2 cols=153 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-27T11:04:38.367099Z  INFO herdr::server::headless: client resize client_id=2 cols=161 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-27T11:04:38.468623Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-27T11:04:42.088359Z  INFO herdr::server::headless: client resize client_id=2 cols=163 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-27T11:04:42.190159Z  INFO herdr::server::headless: client resize client_id=2 cols=165 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-27T11:04:58.455463Z  INFO herdr::server::headless: client resize client_id=2 cols=175 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-27T11:04:58.558256Z  INFO herdr::server::headless: client resize client_id=2 cols=214 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-27T11:05:00.638637Z  INFO herdr::server::headless: client resize client_id=2 cols=207 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-27T11:05:00.740330Z  INFO herdr::server::headless: client resize client_id=2 cols=183 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-27T11:05:00.845455Z  INFO herdr::server::headless: client resize client_id=2 cols=182 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-27T11:05:02.309477Z  INFO herdr::server::headless: client resize client_id=2 cols=216 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-27T11:05:04.504610Z  INFO herdr::pane: agent changed pane=5 previous_agent=Some(Claude) agent=None pgid=Some(22916)
+2026-07-27T11:05:06.527125Z  INFO herdr::pane: agent changed pane=5 previous_agent=None agent=Some(Claude) process=claude pgid=Some(28959)
+2026-07-27T11:07:10.030738Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T11:07:15.035035Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T11:09:36.319893Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T11:09:37.870722Z  INFO herdr::pane: agent changed pane=5 previous_agent=Some(Claude) agent=None pgid=Some(22916)
+2026-07-27T11:09:41.329575Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T11:09:45.449341Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T11:09:50.451422Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T11:09:52.611792Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T11:09:56.263058Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T11:10:00.025502Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T11:10:05.034243Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T11:10:05.041577Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T11:10:10.045634Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T11:10:15.087405Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T11:10:20.091495Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T11:10:20.132062Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T11:10:25.139892Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T11:10:30.238606Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T11:10:35.243074Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T11:11:40.419729Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-27T11:11:45.429466Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-27T11:16:33.990499Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T00:34:11.624819Z  INFO herdr::server::headless: client resize client_id=2 cols=274 rows=70 cell_width_px=0 cell_height_px=0
+2026-07-28T00:44:33.983792Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T01:03:11.134089Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T01:03:16.143571Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:14:33.985889Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T01:17:35.360210Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T01:17:38.244938Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T01:17:43.254023Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:19:26.640986Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-07-28T01:19:26.641111Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
+2026-07-28T01:19:31.648349Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:19:32.307577Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-07-28T01:19:34.409792Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-28T01:19:34.409882Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T01:19:38.089714Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T01:19:41.956993Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T01:19:43.574400Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T01:19:44.091123Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T01:19:45.323556Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T01:19:46.307604Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T01:19:51.311589Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:19:53.596646Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=9 rows=69 cols=124 scrollback_limit_bytes=10000000
+2026-07-28T01:19:53.604179Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=9 pid=36335
+2026-07-28T01:19:53.604610Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T01:19:57.831324Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=9 status="ExitStatus { code: 1, signal: None }"
+2026-07-28T01:19:57.831434Z  INFO herdr::pane: pane session terminated pane=9 pid=36335 signal=Hangup
+2026-07-28T01:19:59.846092Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T01:20:02.126971Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=10 rows=69 cols=124 scrollback_limit_bytes=10000000
+2026-07-28T01:20:02.134312Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=10 pid=37879
+2026-07-28T01:20:02.134705Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T01:20:07.143643Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:21:25.024399Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T01:21:30.030158Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:22:31.540212Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T01:22:35.933913Z  INFO herdr::pane: agent changed pane=4 previous_agent=Some(Claude) agent=None pgid=Some(22417)
+2026-07-28T01:22:36.543868Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:37:59.521231Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-07-28T01:37:59.521338Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-07-28T01:38:00.588757Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-28T01:38:00.588885Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T01:38:01.288611Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T01:38:01.722407Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T01:38:06.728177Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:43:38.587963Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T01:43:43.591280Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:43:44.404357Z  INFO herdr::pane: agent changed pane=4 previous_agent=None agent=Some(Claude) process=claude pgid=Some(39170)
+2026-07-28T01:43:49.428754Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:44:14.783423Z  INFO herdr::pane: agent changed pane=4 previous_agent=Some(Claude) agent=None pgid=Some(22417)
+2026-07-28T01:44:19.485513Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:44:33.941283Z  INFO herdr::pane: agent changed pane=4 previous_agent=None agent=Some(Claude) process=claude pgid=Some(39261)
+2026-07-28T01:44:33.991912Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T01:44:39.237062Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:44:43.241493Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T01:44:48.245510Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:44:53.971147Z  INFO herdr::pane: agent changed pane=5 previous_agent=None agent=Some(Claude) process=claude pgid=Some(40078)
+2026-07-28T01:44:59.186523Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:45:05.808180Z  INFO herdr::pane: agent changed pane=5 previous_agent=Some(Claude) agent=None pgid=Some(22916)
+2026-07-28T01:45:10.509252Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:45:31.496183Z  INFO herdr::pane: agent changed pane=5 previous_agent=None agent=Some(Claude) process=claude pgid=Some(40242)
+2026-07-28T01:45:36.843263Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:45:44.171149Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T01:45:49.177368Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:46:18.848295Z  INFO herdr::pane: agent changed pane=4 previous_agent=Some(Claude) agent=None pgid=Some(22417)
+2026-07-28T01:46:23.549192Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:47:00.194804Z  INFO herdr::pane: agent changed pane=4 previous_agent=None agent=Some(Claude) process=claude pgid=Some(39261)
+2026-07-28T01:47:44.342832Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T01:47:49.348171Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:47:53.088438Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T01:47:55.290214Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T01:48:00.292790Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:50:10.806124Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T01:50:15.809162Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T01:55:22.824506Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-28T01:57:14.871015Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T01:57:15.870714Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-28T01:57:19.878092Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T02:14:33.997959Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T02:14:58.967895Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-07-28T02:14:58.968075Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-07-28T02:15:03.976673Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T02:22:59.770733Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-07-28T02:22:59.770848Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t1"
+2026-07-28T02:23:00.620342Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-28T02:23:00.620461Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T02:23:03.120510Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T02:23:04.253417Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T02:23:06.803850Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T02:23:09.499116Z  INFO herdr::pane: agent changed pane=10 previous_agent=None agent=Some(Claude) process=claude pgid=Some(42873)
+2026-07-28T02:23:14.487028Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T02:23:15.580334Z  INFO herdr::pane: agent changed pane=10 previous_agent=Some(Claude) agent=None pgid=Some(37879)
+2026-07-28T02:23:20.285390Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T02:23:36.254850Z  INFO herdr::pane: agent changed pane=10 previous_agent=None agent=Some(Claude) process=claude pgid=Some(42873)
+2026-07-28T02:23:45.037610Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T02:23:47.220410Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T02:23:49.210473Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-28T02:23:49.454383Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T02:23:49.900612Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-28T02:23:50.653954Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T02:23:51.024743Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-28T02:23:52.392309Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-28T02:23:53.104010Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T02:24:01.096729Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T02:38:09.286177Z  INFO herdr::server::headless: client connected client_id=4 cols=80 rows=29 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-28T02:38:11.675494Z  INFO herdr::server::headless: client resize client_id=4 cols=80 rows=65 cell_width_px=0 cell_height_px=0
+2026-07-28T02:38:12.392576Z  INFO herdr::server::headless: client resize client_id=4 cols=271 rows=65 cell_width_px=0 cell_height_px=0
+2026-07-28T02:38:14.244564Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T02:38:15.362283Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T02:38:20.367580Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T02:38:52.229485Z  INFO herdr::server::headless: client resize client_id=4 cols=271 rows=64 cell_width_px=0 cell_height_px=0
+2026-07-28T02:38:55.111167Z  INFO herdr::server::headless: client resize client_id=4 cols=271 rows=54 cell_width_px=0 cell_height_px=0
+2026-07-28T02:38:58.832782Z  INFO herdr::server::headless: client resize client_id=4 cols=271 rows=64 cell_width_px=0 cell_height_px=0
+2026-07-28T02:38:59.873267Z  INFO herdr::server::headless: client resize client_id=4 cols=271 rows=54 cell_width_px=0 cell_height_px=0
+2026-07-28T02:39:12.662201Z  INFO herdr::server::headless: client resize client_id=4 cols=271 rows=64 cell_width_px=0 cell_height_px=0
+2026-07-28T02:39:13.797014Z  INFO herdr::server::headless: client resize client_id=4 cols=271 rows=54 cell_width_px=0 cell_height_px=0
+2026-07-28T02:39:15.961426Z  INFO herdr::server::headless: client resize client_id=4 cols=271 rows=64 cell_width_px=0 cell_height_px=0
+2026-07-28T02:39:16.365410Z  INFO herdr::server::headless: client resize client_id=4 cols=271 rows=54 cell_width_px=0 cell_height_px=0
+2026-07-28T02:39:19.666431Z  INFO herdr::server::headless: client resize client_id=4 cols=271 rows=64 cell_width_px=0 cell_height_px=0
+2026-07-28T02:39:22.580218Z  INFO herdr::server::headless: client resize client_id=4 cols=271 rows=54 cell_width_px=0 cell_height_px=0
+2026-07-28T02:39:36.483745Z  INFO herdr::server::headless: client resize client_id=4 cols=271 rows=64 cell_width_px=0 cell_height_px=0
+2026-07-28T02:41:11.463012Z  INFO herdr::server::headless: client resize client_id=4 cols=271 rows=54 cell_width_px=0 cell_height_px=0
+2026-07-28T02:41:33.674788Z  INFO herdr::server::headless: client disconnected client_id=4
+2026-07-28T02:44:33.908048Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T02:52:32.749036Z  INFO herdr::server::headless: client connected client_id=6 cols=271 rows=68 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-28T02:52:46.728027Z  INFO herdr::server::headless: client resize client_id=6 cols=271 rows=67 cell_width_px=0 cell_height_px=0
+2026-07-28T02:52:48.894832Z  INFO herdr::server::headless: client resize client_id=6 cols=271 rows=57 cell_width_px=0 cell_height_px=0
+2026-07-28T02:52:50.145730Z  INFO herdr::server::headless: client resize client_id=6 cols=271 rows=67 cell_width_px=0 cell_height_px=0
+2026-07-28T02:52:50.550052Z  INFO herdr::server::headless: client resize client_id=6 cols=271 rows=57 cell_width_px=0 cell_height_px=0
+2026-07-28T02:52:52.608330Z  INFO herdr::server::headless: client resize client_id=6 cols=271 rows=67 cell_width_px=0 cell_height_px=0
+2026-07-28T02:52:54.052817Z  INFO herdr::server::headless: client resize client_id=6 cols=134 rows=67 cell_width_px=0 cell_height_px=0
+2026-07-28T02:55:01.678821Z  INFO herdr::server::headless: client resize client_id=6 cols=134 rows=57 cell_width_px=0 cell_height_px=0
+2026-07-28T02:55:02.700949Z  INFO herdr::server::headless: client resize client_id=6 cols=134 rows=67 cell_width_px=0 cell_height_px=0
+2026-07-28T02:55:03.424536Z  INFO herdr::server::headless: client resize client_id=6 cols=134 rows=57 cell_width_px=0 cell_height_px=0
+2026-07-28T02:55:09.735087Z  INFO herdr::server::headless: client resize client_id=6 cols=134 rows=67 cell_width_px=0 cell_height_px=0
+2026-07-28T02:55:33.333515Z  INFO herdr::server::headless: client resize client_id=6 cols=134 rows=50 cell_width_px=0 cell_height_px=0
+2026-07-28T02:55:34.262367Z  INFO herdr::server::headless: client resize client_id=6 cols=134 rows=67 cell_width_px=0 cell_height_px=0
+2026-07-28T02:57:35.966905Z  INFO herdr::server::headless: client resize client_id=6 cols=271 rows=67 cell_width_px=0 cell_height_px=0
+2026-07-28T02:58:11.521074Z  INFO herdr::server::headless: client resize client_id=6 cols=80 rows=63 cell_width_px=0 cell_height_px=0
+2026-07-28T02:58:14.126487Z  INFO herdr::server::headless: client disconnected client_id=6
+2026-07-28T03:14:33.773458Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T03:19:04.313332Z  INFO herdr::server::headless: client connected client_id=8 cols=271 rows=65 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-28T03:19:07.846633Z  INFO herdr::server::headless: client resize client_id=8 cols=271 rows=64 cell_width_px=0 cell_height_px=0
+2026-07-28T03:19:09.390459Z  INFO herdr::server::headless: client resize client_id=8 cols=271 rows=54 cell_width_px=0 cell_height_px=0
+2026-07-28T03:20:33.987383Z  INFO herdr::server::headless: client resize client_id=8 cols=271 rows=64 cell_width_px=0 cell_height_px=0
+2026-07-28T03:20:39.795656Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T03:20:44.800526Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:26:27.473926Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T03:26:32.483183Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:26:50.243002Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-28T03:26:57.407685Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:35:35.004288Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-28T03:35:39.157932Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T03:35:41.241650Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T03:35:42.595198Z  INFO herdr::pane: agent changed pane=10 previous_agent=Some(Claude) agent=None pgid=Some(37879)
+2026-07-28T03:35:46.249051Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:36:19.555897Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T03:36:24.561289Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:36:56.375251Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-28T03:37:20.398931Z  INFO herdr::server::headless: client connected client_id=10 cols=119 rows=59 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-28T03:37:33.184590Z  INFO herdr::server::headless: client disconnected client_id=10
+2026-07-28T03:39:06.294814Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T03:39:11.301904Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:39:33.166563Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T03:39:38.174796Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:39:47.304857Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T03:39:50.721662Z  INFO herdr::pane: agent changed pane=10 previous_agent=None agent=Some(Claude) process=claude pgid=Some(53137)
+2026-07-28T03:39:55.686588Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:44:31.910289Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T03:44:56.442169Z  INFO herdr::pane: agent changed pane=10 previous_agent=Some(Claude) agent=None pgid=Some(37879)
+2026-07-28T03:45:01.147071Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:45:11.562956Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T03:45:16.568570Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:46:32.452476Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T03:46:37.458757Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:46:43.952373Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T03:46:48.959292Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:47:00.391733Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:47:07.899654Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T03:47:12.050737Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T03:47:17.055608Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:47:17.333392Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T03:47:22.340587Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:47:50.423360Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-28T03:48:01.082461Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:55:44.620723Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T03:55:45.688329Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T03:55:50.696113Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:56:07.953358Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T03:56:12.955772Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:56:32.135519Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T03:56:37.137768Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:58:47.793530Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T03:58:52.799188Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T03:58:59.684990Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T04:05:10.355952Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T04:05:15.359760Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T04:05:18.338118Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T04:05:23.343848Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T04:09:08.592052Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T04:09:13.596816Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T04:09:22.974486Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T04:09:33.068129Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T04:11:12.904963Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-28T04:14:34.000888Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T04:14:34.160012Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T04:14:39.164507Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T04:18:11.857394Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-28T04:18:27.644292Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T04:18:32.654609Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T04:18:36.543924Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T04:18:41.551296Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T04:20:27.632674Z  INFO herdr::server::headless: client disconnected client_id=8
+2026-07-28T04:21:40.033962Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T04:21:41.733149Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T04:21:49.203661Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T04:26:38.639675Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T04:26:38.807380Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T04:26:39.390056Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T04:26:44.393953Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T04:26:47.157190Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T04:26:52.160586Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T04:44:34.024257Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T05:14:34.028312Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T05:29:48.652483Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T05:29:50.152410Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T05:29:55.158210Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T05:30:11.936788Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-28T05:44:34.035968Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T05:59:55.432275Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T05:59:56.166040Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T05:59:56.815616Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T05:59:57.449459Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:00:02.453442Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T06:00:02.716139Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:00:07.016443Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:00:12.025858Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T06:01:45.295625Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:01:50.302759Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T06:02:32.829794Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:02:37.833547Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T06:14:30.019842Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T06:14:32.480227Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T06:14:37.483872Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T06:14:38.713359Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T06:14:43.717636Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T06:14:45.029002Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T06:14:47.095664Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T06:14:48.746134Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-07-28T06:14:48.746221Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
+2026-07-28T06:14:52.695740Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w3"
+2026-07-28T06:14:52.695824Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T06:14:54.629142Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:14:55.362579Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:15:00.162412Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T06:15:05.166782Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T06:16:12.629148Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T06:16:17.632768Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=2
+2026-07-28T06:22:17.369897Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-28T06:41:03.207016Z  INFO herdr::server::headless: client connected client_id=12 cols=119 rows=59 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-28T06:41:06.190426Z  INFO herdr::server::headless: client resize client_id=12 cols=129 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-28T06:41:06.295512Z  INFO herdr::server::headless: client resize client_id=12 cols=174 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-28T06:41:06.397185Z  INFO herdr::server::headless: client resize client_id=12 cols=223 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-28T06:41:06.497379Z  INFO herdr::server::headless: client resize client_id=12 cols=239 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-28T06:41:14.254115Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-07-28T06:41:23.179507Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T06:41:27.445586Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-07-28T06:41:27.445683Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w4" tab_id="w4:t2"
+2026-07-28T06:41:29.762985Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w4"
+2026-07-28T06:41:29.765426Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=6 status="ExitStatus { code: 1, signal: None }"
+2026-07-28T06:41:29.787788Z  INFO herdr::pane: pane session terminated pane=6 pid=98752 signal=Hangup
+2026-07-28T06:41:29.790496Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=7 status="ExitStatus { code: 1, signal: None }"
+2026-07-28T06:41:30.261355Z  INFO herdr::pane: pane session terminated pane=7 pid=99270 signal=Terminate
+2026-07-28T06:41:30.262643Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=8 status="ExitStatus { code: 1, signal: None }"
+2026-07-28T06:41:30.717311Z  INFO herdr::pane: pane session terminated pane=8 pid=99767 signal=Terminate
+2026-07-28T06:41:30.717692Z  WARN herdr::app::actions: PaneDied for unknown pane pane=6
+2026-07-28T06:41:30.717714Z  WARN herdr::app::actions: PaneDied for unknown pane pane=7
+2026-07-28T06:41:30.717722Z  WARN herdr::app::actions: PaneDied for unknown pane pane=8
+2026-07-28T06:41:35.721913Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T06:44:28.716360Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:44:30.196579Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:44:30.846060Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:44:31.463440Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:44:32.050710Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:44:32.663070Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:44:34.027523Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T06:44:37.667386Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T06:49:50.489001Z  INFO herdr::server::headless: client disconnected client_id=12
+2026-07-28T06:50:22.747346Z  INFO herdr::server::headless: client connected client_id=14 cols=271 rows=65 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-28T06:50:34.002280Z  INFO herdr::server::headless: client resize client_id=14 cols=134 rows=65 cell_width_px=0 cell_height_px=0
+2026-07-28T06:50:35.872044Z  INFO herdr::server::headless: client resize client_id=14 cols=271 rows=65 cell_width_px=0 cell_height_px=0
+2026-07-28T06:50:40.929370Z  INFO herdr::server::headless: client resize client_id=14 cols=134 rows=65 cell_width_px=0 cell_height_px=0
+2026-07-28T06:51:29.221560Z  INFO herdr::server::headless: client disconnected client_id=14
+2026-07-28T06:51:37.100165Z  INFO herdr::server::headless: client connected client_id=16 cols=239 rows=59 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-28T06:54:31.343844Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t2"
+2026-07-28T06:54:36.349977Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T06:54:42.105178Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T06:54:42.792631Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:54:47.411629Z  INFO herdr::pane: agent changed pane=10 previous_agent=None agent=Some(Claude) process=claude pgid=Some(74739)
+2026-07-28T06:54:52.226427Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T06:57:24.227085Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:57:29.232396Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T06:57:41.214821Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:57:41.993949Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:57:47.002812Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T06:57:59.460490Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:58:04.469862Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T06:58:32.510348Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:58:37.518917Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T06:59:07.577728Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:59:12.584930Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T06:59:31.127748Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T06:59:36.133981Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T07:00:08.936135Z  INFO herdr::server::headless: client connected client_id=18 cols=274 rows=68 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-28T07:00:09.860451Z  INFO herdr::server::headless: client disconnected client_id=16
+2026-07-28T07:00:22.883372Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T07:00:23.933702Z  INFO herdr::pane: agent changed pane=10 previous_agent=Some(Claude) agent=None pgid=Some(37879)
+2026-07-28T07:00:28.638965Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T07:00:39.732625Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T07:00:43.083436Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T07:00:48.091369Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T07:03:46.085454Z  INFO herdr::server::headless: client disconnected client_id=18
+2026-07-28T07:04:26.506093Z  INFO herdr::server::headless: client connected client_id=20 cols=271 rows=65 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-28T07:07:49.923837Z  INFO herdr::server::headless: client resize client_id=20 cols=271 rows=63 cell_width_px=0 cell_height_px=0
+2026-07-28T07:07:51.377489Z  INFO herdr::server::headless: client resize client_id=20 cols=271 rows=65 cell_width_px=0 cell_height_px=0
+2026-07-28T07:07:54.183772Z  INFO herdr::server::headless: client resize client_id=20 cols=271 rows=63 cell_width_px=0 cell_height_px=0
+2026-07-28T07:07:54.917001Z  INFO herdr::server::headless: client resize client_id=20 cols=271 rows=64 cell_width_px=0 cell_height_px=0
+2026-07-28T07:07:57.530790Z  INFO herdr::server::headless: client resize client_id=20 cols=271 rows=54 cell_width_px=0 cell_height_px=0
+2026-07-28T07:07:59.087157Z  INFO herdr::server::headless: client resize client_id=20 cols=271 rows=64 cell_width_px=0 cell_height_px=0
+2026-07-28T07:08:00.028947Z  INFO herdr::server::headless: client resize client_id=20 cols=134 rows=64 cell_width_px=0 cell_height_px=0
+2026-07-28T07:08:09.006693Z  INFO herdr::server::headless: client resize client_id=20 cols=271 rows=64 cell_width_px=0 cell_height_px=0
+2026-07-28T07:08:12.038685Z  INFO herdr::server::headless: client resize client_id=20 cols=271 rows=60 cell_width_px=0 cell_height_px=0
+2026-07-28T07:08:12.876071Z  INFO herdr::server::headless: client resize client_id=20 cols=134 rows=64 cell_width_px=0 cell_height_px=0
+2026-07-28T07:08:24.785037Z  INFO herdr::server::headless: client resize client_id=20 cols=134 rows=54 cell_width_px=0 cell_height_px=0
+2026-07-28T07:08:25.308183Z  INFO herdr::server::headless: client resize client_id=20 cols=134 rows=64 cell_width_px=0 cell_height_px=0
+2026-07-28T07:08:26.664453Z  INFO herdr::server::headless: client resize client_id=20 cols=134 rows=61 cell_width_px=0 cell_height_px=0
+2026-07-28T07:09:46.762897Z  INFO herdr::server::headless: client resize client_id=20 cols=134 rows=64 cell_width_px=0 cell_height_px=0
+2026-07-28T07:12:52.695061Z  INFO herdr::server::headless: client resize client_id=20 cols=134 rows=54 cell_width_px=0 cell_height_px=0
+2026-07-28T07:12:52.800184Z  INFO herdr::server::headless: client resize client_id=20 cols=134 rows=64 cell_width_px=0 cell_height_px=0
+2026-07-28T07:14:34.047615Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T07:23:02.022430Z  INFO herdr::server::headless: client resize client_id=20 cols=134 rows=54 cell_width_px=0 cell_height_px=0
+2026-07-28T07:32:29.523788Z  INFO herdr::server::headless: client resize client_id=20 cols=271 rows=64 cell_width_px=0 cell_height_px=0
+2026-07-28T07:32:40.406830Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T07:32:45.419432Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T07:32:50.061093Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T07:32:55.069658Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T07:32:58.309518Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T07:32:59.709132Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T07:33:00.892692Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T07:33:04.724808Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T07:33:08.058223Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T07:33:13.066456Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T07:33:15.814278Z  INFO herdr::server::headless: client disconnected client_id=20
+2026-07-28T07:33:40.207482Z  INFO herdr::server::headless: client connected client_id=22 cols=239 rows=59 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-28T07:33:47.016804Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T07:33:52.021030Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T07:33:52.881989Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T07:33:57.893078Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T07:34:00.081881Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T07:34:05.085408Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T07:34:08.049587Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T07:34:12.534247Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T07:34:15.631941Z  INFO herdr::pane: agent changed pane=1 previous_agent=None agent=Some(Claude) process=claude pgid=Some(79612)
+2026-07-28T07:34:20.555736Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T07:34:36.231126Z  INFO herdr::server::headless: client resize client_id=22 cols=239 rows=57 cell_width_px=0 cell_height_px=0
+2026-07-28T07:44:33.961100Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T07:47:33.366964Z  INFO herdr::server::headless: client resize client_id=22 cols=239 rows=59 cell_width_px=0 cell_height_px=0
+2026-07-28T07:47:33.372679Z  INFO herdr::server::headless: client disconnected client_id=22
+2026-07-28T07:47:38.009275Z  INFO herdr::server::headless: client connected client_id=24 cols=274 rows=68 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-28T07:47:40.408399Z  INFO herdr::server::headless: client resize client_id=24 cols=274 rows=66 cell_width_px=0 cell_height_px=0
+2026-07-28T08:14:33.905655Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T08:44:33.950324Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T08:48:01.967736Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w3" tab_id="w3:t1"
+2026-07-28T08:48:06.976272Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/Users/kaito.muraoka/.config/herdr/session.json workspaces=1
+2026-07-28T09:14:33.944620Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T09:33:33.618204Z  INFO herdr::server::headless: client resize client_id=24 cols=193 rows=48 cell_width_px=0 cell_height_px=0
+2026-07-28T09:41:43.943812Z  INFO herdr::server::headless: client resize client_id=24 cols=274 rows=66 cell_width_px=0 cell_height_px=0
+2026-07-28T09:41:44.045587Z  INFO herdr::server::headless: client resize client_id=24 cols=274 rows=62 cell_width_px=0 cell_height_px=0
+2026-07-28T09:44:34.057728Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T10:14:34.114499Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T10:44:34.076861Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-28T13:56:36.698487Z  INFO herdr::server::headless: client resize client_id=24 cols=193 rows=48 cell_width_px=0 cell_height_px=0
+2026-07-28T13:57:03.109914Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-29T01:03:31.646829Z  INFO herdr::server::headless: client resize client_id=24 cols=163 rows=44 cell_width_px=0 cell_height_px=0
+2026-07-29T01:06:12.273357Z  INFO herdr::server::headless: client resize client_id=24 cols=274 rows=62 cell_width_px=0 cell_height_px=0

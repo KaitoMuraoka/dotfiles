@@ -1,0 +1,126 @@
+{
+  "version": 3,
+  "workspaces": [
+    {
+      "id": "w3",
+      "custom_name": "ランダム機能",
+      "identity_cwd": "/Users/kaito.muraoka/product/web",
+      "public_pane_numbers": {
+        "5": 5,
+        "1": 1,
+        "3": 3,
+        "10": 7,
+        "2": 2,
+        "4": 4
+      },
+      "next_public_pane_number": 8,
+      "public_tab_numbers": [
+        1,
+        2
+      ],
+      "next_public_tab_number": 3,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Split": {
+                  "direction": "Vertical",
+                  "ratio": 0.5,
+                  "first": {
+                    "Pane": 1
+                  },
+                  "second": {
+                    "Pane": 10
+                  }
+                }
+              },
+              "second": {
+                "Split": {
+                  "direction": "Vertical",
+                  "ratio": 0.5,
+                  "first": {
+                    "Pane": 2
+                  },
+                  "second": {
+                    "Pane": 3
+                  }
+                }
+              }
+            }
+          },
+          "panes": {
+            "1": {
+              "cwd": "/Users/kaito.muraoka/product/web",
+              "agent_session": {
+                "source": "herdr:claude",
+                "agent": "claude",
+                "kind": "id",
+                "value": "bcc2be02-de5b-4b8c-b8d7-d7f21359d60f"
+              }
+            },
+            "2": {
+              "cwd": "/Users/kaito.muraoka/product/web/tunag"
+            },
+            "3": {
+              "cwd": "/Users/kaito.muraoka/product/web/tunag-front"
+            },
+            "10": {
+              "cwd": "/Users/kaito.muraoka/product/web/tunag-education"
+            }
+          },
+          "zoomed": false,
+          "focused": 10,
+          "root_pane": 1
+        },
+        {
+          "custom_name": "claude",
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Pane": 4
+              },
+              "second": {
+                "Pane": 5
+              }
+            }
+          },
+          "panes": {
+            "5": {
+              "cwd": "/Users/kaito.muraoka/product/web",
+              "agent_session": {
+                "source": "herdr:claude",
+                "agent": "claude",
+                "kind": "id",
+                "value": "7a243e49-0c01-4b75-8817-416db248760e"
+              }
+            },
+            "4": {
+              "cwd": "/Users/kaito.muraoka/product/web",
+              "agent_session": {
+                "source": "herdr:claude",
+                "agent": "claude",
+                "kind": "id",
+                "value": "4ade4b1a-ab37-44f7-852f-2a7f902f6b6d"
+              }
+            }
+          },
+          "zoomed": false,
+          "focused": 4,
+          "root_pane": 4
+        }
+      ],
+      "active_tab": 0
+    }
+  ],
+  "active": 0,
+  "selected": 0,
+  "sidebar_width": 26,
+  "sidebar_section_split": 0.5,
+  "collapsed_space_keys": []
+}
