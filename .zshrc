@@ -61,62 +61,12 @@ alias nn='cd ~/.config/nvim && nvim .'
 
 alias pathcheck='echo $PATH'
 
-# note directory
-alias worknote='cd ~/Desktop/note/work-note/ && nvim'
-alias privatenote='cd ~/Desktop/note/private/ && nvim'
-
-# VScode Alias
-alias cz='code ~/.zshrc && source ~/.zshrc'
-alias cg='code ~/.gitconfig && source ~/.gitconfig'
-
-# Coteditor
-alias cot="open -a /Applications/CotEditor.app"
-# Fork (Git GUI App) alias
-alias fork="open -a /Applications/Fork.app"
-
-# Create SwiftCLI(SPM)
-alias createSwiftCLI='swift package init  --type executable --name'
-
 # freeze alias
 alias freeze='freeze --show-line-numbers --window'
-
-# --- Emacs Alias 決定版 ---
-
-# 共通変数（パスが長いので変数にまとめます）
-export EMACS_BIN="/Applications/Emacs.app/Contents/MacOS/Emacs"
-export EMACS_CLIENT="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient"
-
-# 1. 現在開いているEmacsで開く (GUI)
-# すでに Emacs があればそれで開き、なければ新しく起動します
-alias e="$EMACS_CLIENT -n -a ''"
-
-# 2. 完全に「新しいウィンドウ（Frame）」としてEmacsを起動する (GUI)
-# 既存のウィンドウとは別に、もう一つウィンドウを作りたい時用
-alias en="$EMACS_CLIENT -n -c -a ''"
-
-# 3. ターミナルの中でEmacsを開く (CUI)
-# Vim (n) と同じように、ターミナル内で完結させたい時用
-alias et="$EMACS_BIN -nw"
 
 # 設定ファイル編集用（既存のものを整理）
 alias ez="e ~/.zshrc && source ~/.zshrc"
 alias ei="e ~/.emacs.d/init.el"
-
-# Eza Alias (better ls)
-# alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
-
-# alias version
-alias vv='~/dotfiles/show-tool-version/ShowToolVersion.sh'
-
-# alias move Directory
-alias imwork='cd ~/caraquri/ && cd'
-alias imdeveloper='cd ~/personalDevelop/'
-
-# flutter aliases
-alias flutter-create-mobile='flutter create --platforms=ios,android'
-
-[[ "$TERM_PROGRAM" == "CodeEditApp_Terminal" ]] && . "/Applications/CodeEdit.app/Contents/Resources/codeedit_shell_integration.zsh"
-fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # Created by `pipx` on 2024-06-01 13:51:03
 export PATH="$PATH:/Users/kaitomuraoka/.local/bin"
