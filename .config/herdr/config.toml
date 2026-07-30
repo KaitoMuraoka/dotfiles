@@ -5,3 +5,6 @@ agent_panel_sort = "spaces"
 
 [ui.toast]
 delivery = "system"
+
+[experimental]
+switch_ascii_input_source_in_prefix = true
