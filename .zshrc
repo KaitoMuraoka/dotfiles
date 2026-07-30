@@ -103,10 +103,6 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 eval "$(rbenv init -)" # bash の場合は /Users/kaito/.bash_profile
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
@@ -115,17 +111,15 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 
+# thefuck
+# https://github.com/nvbn/thefuck
+eval $(thefuck --alias)
+# You can use whatever you want as an alias, like for Mondays:
+eval $(thefuck --alias FUCK)
 
 # alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 # export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
-
-# Emacs デーモンの起動（未起動の場合のみ）
-# alias/PATH の設定後に実行しないと emacs コマンドが見つからない
-# pgrep -f でコマンドライン全体を検索し、デーモンモードで起動中かチェック
-# if ! pgrep -f "emacs.*--daemon" > /dev/null 2>&1; then
-#   /Applications/Emacs.app/Contents/MacOS/Emacs --daemon &>/dev/null &
-# fi
 
 # Ctrl+j で中断ジョブを一覧から fzf で選んで fg する
 fzf-fg() {
@@ -146,3 +140,6 @@ export PATH="/Users/kaito.muraoka/.rd/bin:$PATH"
 if [ -f "$HOME/.zshrc.local" ]; then
     source "$HOME/.zshrc.local"
 fi
+
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
