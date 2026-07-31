@@ -32,3 +32,4 @@ editor/.config/github-copilot/
 .claude/settings.local.json
 .claude/policy-limits.json
 .claude/sessions/
+.config/herdr/session.json
