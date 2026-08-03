@@ -33,3 +33,6 @@ editor/.config/github-copilot/
 .claude/policy-limits.json
 .claude/sessions/
 .config/herdr/session.json
+.config/claude-usage-bar
+.config/fish
+.config/ticktick-cli
