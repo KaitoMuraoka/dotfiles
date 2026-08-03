@@ -11,9 +11,8 @@ plugins=(
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 	web-search
+  fzf-tab
     xcode
-    tmux
-    emacs
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -143,3 +142,10 @@ fi
 
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
+
+# デフォルトでは全コマンドに対してfzf-tabを無効化
+zstyle ':fzf-tab:*' disabled-on any
+
+# 例外として git checkout / git switch だけ有効化
+zstyle ':fzf-tab:complete:git-checkout:*' disabled-on none
+zstyle ':fzf-tab:complete:git-switch:*' disabled-on none
