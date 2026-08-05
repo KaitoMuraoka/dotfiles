@@ -8,3 +8,7 @@ delivery = "system"
 
 [experimental]
 switch_ascii_input_source_in_prefix = true
+
+[theme]
+name = "terminal"
+auto_switch = false
