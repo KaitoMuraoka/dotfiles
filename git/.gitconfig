@@ -27,6 +27,7 @@
 
 [diff]
     colorMoved = default
+	tool = hunk
 
 [alias]
   rebase-branch = "rebase -i $(git merge-base HEAD main)"
@@ -60,3 +61,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[difftool "hunk"]
+	cmd = hunk diff

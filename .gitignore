@@ -39,3 +39,4 @@ editor/.config/github-copilot/
 .config/herdr/herdr-client.log
 .config/herdr/herdr-server.log
 .config/herdr/release-notes.json
+.config/hunk/state.json
