@@ -52,7 +52,6 @@ alias act='act --container-architecture linux/amd64'
 
 # NeoVim Alias
 alias n='nvim'
-alias vim='nvim'
 alias nd='nvim ~/dotfiles/'
 alias nz='nvim ~/dotfiles/.zshrc && source ~/.zshrc'
 alias ng='nvim ~/dotfiles/.gitconfig && source ~/.gitconfig'
@@ -149,3 +148,4 @@ zstyle ':fzf-tab:*' disabled-on any
 # 例外として git checkout / git switch だけ有効化
 zstyle ':fzf-tab:complete:git-checkout:*' disabled-on none
 zstyle ':fzf-tab:complete:git-switch:*' disabled-on none
+export GH_EXPERIMENTAL_PROMPTER=1
