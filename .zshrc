@@ -148,3 +148,4 @@ zstyle ':fzf-tab:*' disabled-on any
 # 例外として git checkout / git switch だけ有効化
 zstyle ':fzf-tab:complete:git-checkout:*' disabled-on none
 zstyle ':fzf-tab:complete:git-switch:*' disabled-on none
+export GH_EXPERIMENTAL_PROMPTER=1
