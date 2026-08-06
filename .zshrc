@@ -37,11 +37,14 @@ chpwd(){
 	fi
 }
 
+# ai agent alias
+alias big_brother="claude"
+
 # reload alias
 alias reload="exec zsh"
 
 # Aliases 
-alias c='clear' # clearと入力するのがだるい🥱
+alias c='clear'
 # Git
 alias gs='git status'
 alias gc='git config user.name;git config user.email'
@@ -84,6 +87,9 @@ alias ll=ee
 alias lt=et
 alias lta=eta
 alias l="clear && ls"
+
+# open ticktick gui
+alias ticktick="open /Applications/TickTick.app"
 
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
@@ -148,4 +154,6 @@ zstyle ':fzf-tab:*' disabled-on any
 # 例外として git checkout / git switch だけ有効化
 zstyle ':fzf-tab:complete:git-checkout:*' disabled-on none
 zstyle ':fzf-tab:complete:git-switch:*' disabled-on none
+
+# gh の新しい表示利用
 export GH_EXPERIMENTAL_PROMPTER=1
