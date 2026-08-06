@@ -88,6 +88,9 @@ alias lt=et
 alias lta=eta
 alias l="clear && ls"
 
+# open ticktick gui
+alias ticktick="open /Applications/TickTick.app"
+
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
 [[ -f /Users/kaitomuraoka/.dart-cli-completion/zsh-config.zsh ]] && . /Users/kaitomuraoka/.dart-cli-completion/zsh-config.zsh || true
