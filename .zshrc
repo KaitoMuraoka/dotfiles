@@ -37,6 +37,9 @@ chpwd(){
 	fi
 }
 
+# ai agent alias
+alias big_brother="claude"
+
 # reload alias
 alias reload="exec zsh"
 
