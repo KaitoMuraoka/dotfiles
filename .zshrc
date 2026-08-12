@@ -1,5 +1,25 @@
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+
+###=====================================================
+### zsh の見た目を変更
+###=====================================================
+# Git 情報を取得する zsh 標準機能を読み込む
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+# 表示フォーマット: [ブランチ名] + 末尾スペース
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr   '%F{yellow}' # ステージ済みの変更あり
+zstyle ':vcs_info:git:*' unstagedstr '%F{red}' # 未ステージの変更あり
+zstyle ':vcs_info:git:*' formats       '%c%ugit:[%b]%f ' # 変更がなし
+zstyle ':vcs_info:git:*' actionformats '%F{green}%c%ugit:[%b|%a]%f ' # rebaseなどの変更
+
+# PROMPT 内の変数を毎回展開する
+setopt prompt_subst
+
+PROMPT='%~ ${vcs_info_msg_0_}%# '
+
 
 # tmux プラグインの自動起動設定（plugins より前に記述する必要がある）
 ZSH_TMUX_AUTOSTART=false
