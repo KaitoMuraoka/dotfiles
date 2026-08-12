@@ -12,8 +12,8 @@ precmd() { vcs_info }
 zstyle ':vcs_info:git:*' check-for-changes true
 zstyle ':vcs_info:git:*' stagedstr   '%F{yellow}' # ステージ済みの変更あり
 zstyle ':vcs_info:git:*' unstagedstr '%F{red}' # 未ステージの変更あり
-zstyle ':vcs_info:git:*' formats       '%c%u[%b]%f ' # 変更がなし
-zstyle ':vcs_info:git:*' actionformats '%F{green}%c%u[%b|%a]%f ' # rebaseなどの変更
+zstyle ':vcs_info:git:*' formats       '%c%ugit:[%b]%f ' # 変更がなし
+zstyle ':vcs_info:git:*' actionformats '%F{green}%c%ugit:[%b|%a]%f ' # rebaseなどの変更
 
 # PROMPT 内の変数を毎回展開する
 setopt prompt_subst
