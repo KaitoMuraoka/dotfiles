@@ -35,6 +35,8 @@ plugins=(
     xcode
 )
 
+export EDITOR='nvim'
+
 source $ZSH/oh-my-zsh.sh
 
 # claude-code のバックグラウンドアップグレード（cask パッケージのため --cask が必要）
