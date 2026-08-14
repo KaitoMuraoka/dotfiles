@@ -7,7 +7,7 @@ config-version = 2
 
 # You can use it to add commands that run after AeroSpace startup.
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = []
+after-startup-command = ['workspace 9', 'workspace 1']
 
 # Start AeroSpace at login
 start-at-login = true
@@ -58,6 +58,11 @@ on-mode-changed = []
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 [key-mapping]
     preset = 'qwerty'
+
+# Assign workspaces to monitors.
+# See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
+[workspace-to-monitor-force-assignment]
+    9 = 'built-in'
 
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
 # Possible values:
