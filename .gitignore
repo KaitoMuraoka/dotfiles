@@ -8,6 +8,7 @@
 .config/thefuck/
 .config/github-copilot/
 .config/iterm2/
+.config/nvim
 editor/.config/github-copilot/
 
 .config/nvim/
