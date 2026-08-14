@@ -13,25 +13,13 @@ editor/.config/github-copilot/
 .config/nvim/
 .config/ghostty/
 
-# Claude Code（履歴・セッション情報）
-.claude/projects/
-.claude/history.jsonl
-.claude/.session-env/
-.claude/backups/
-.claude/cache/
-.claude/debug/
-.claude/mcp-needs-auth-cache.json
-.claude/plugins/
-.claude/shell-snapshots/
-.claude/todos/
-.claude/file-history/
-.claude/specs/work
-.claude/kiro/
+# Claude Code（下記の許可リスト以外は追跡しない）
+.claude/*
+!.claude/skills/
+!.claude/settings.json
+!.claude/statusline-usage.sh
+!.claude/CLAUDE.md
 
-# Claude Code（マシン固有・自動生成）
-.claude/settings.local.json
-.claude/policy-limits.json
-.claude/sessions/
 .config/herdr/session.json
 .config/claude-usage-bar
 .config/fish
