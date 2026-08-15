@@ -9,7 +9,10 @@ mkdir -p "$CACHE_DIR"
 STDIN=$(cat)
 MODEL=$(printf '%s' "$STDIN" | jq -r '.model.display_name // .model.id // empty' 2>/dev/null)
 CTX_PCT=$(printf '%s' "$STDIN" | jq -r '.context_window.used_percentage // empty' 2>/dev/null)
-CTX_PCT=${CTX_PCT%.*}
+if [ -n "$CTX_PCT" ]; then
+  CTX_PCT_INT=${CTX_PCT%.*}
+  CTX_PCT=$(printf '%.1f' "$CTX_PCT")
+fi
 
 fetch_usage() {
   local token
@@ -39,7 +42,7 @@ color() {  # $1=int percent -> ANSI color
 }
 
 CTX_LABEL=""
-[ -n "$CTX_PCT" ] && CTX_LABEL="$(color "$CTX_PCT")ctx:${CTX_PCT}%${RESET}"
+[ -n "$CTX_PCT" ] && CTX_LABEL="$(color "$CTX_PCT_INT")ctx:${CTX_PCT}%${RESET}"
 
 if [ ! -f "$CACHE" ] || ! jq -e . "$CACHE" >/dev/null 2>&1; then
   printf "%busage …" "$MODEL_LABEL"
@@ -60,11 +63,13 @@ bar() {  # $1=int percent (0-100)
 
 h5=$(jq -r '.five_hour.utilization // 0' "$CACHE")
 d7=$(jq -r '.seven_day.utilization // 0' "$CACHE")
-h5=${h5%.*}
-d7=${d7%.*}
+h5_int=${h5%.*}
+d7_int=${d7%.*}
+h5=$(printf '%.1f' "$h5")
+d7=$(printf '%.1f' "$d7")
 
-printf "%b5h %b%s %d%%%b  7d %b%s %d%%%b" \
+printf "%b5h %b%s %s%%%b  7d %b%s %s%%%b" \
   "$MODEL_LABEL" \
-  "$(color "$h5")" "$(bar "$h5")" "$h5" "$RESET" \
-  "$(color "$d7")" "$(bar "$d7")" "$d7" "$RESET"
+  "$(color "$h5_int")" "$(bar "$h5_int")" "$h5" "$RESET" \
+  "$(color "$d7_int")" "$(bar "$d7_int")" "$d7" "$RESET"
 [ -n "$CTX_LABEL" ] && printf "  %b" "$CTX_LABEL"
