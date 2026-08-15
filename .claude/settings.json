@@ -39,5 +39,6 @@
   "effortLevel": "medium",
   "tui": "fullscreen",
   "skipWorkflowUsageWarning": true,
-  "theme": "auto"
+  "theme": "auto",
+  "agentPushNotifEnabled": true
 }
