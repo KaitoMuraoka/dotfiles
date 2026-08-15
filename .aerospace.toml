@@ -227,4 +227,4 @@ on-mode-changed = []
 # check: $ aerospace list-apps
 [[on-window-detected]]
 if.app-id = 'com.github.wez.wezterm'
-run = 'move-node-to-workspace w'
+run = 'move-node-to-workspace W'
