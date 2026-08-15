@@ -75,4 +75,7 @@ ln -sf ~/dotfiles/xcode/Library/Developer/Xcode/UserData/KeyBindings/MyCustomKey
 ln -sf ~/dotfiles/.claude/CLAUDE.md ~/.claude/CLAUDE.md
 ln -sf ~/dotfiles/.claude/settings.json ~/.claude/settings.json
 ln -sf ~/dotfiles/.claude/statusline-usage.sh ~/.claude/statusline-usage.sh
+
+# AeroSpace
+ln -sf ~/dotfiles/.aerospace.toml ~/.aerospace.toml
 ```
