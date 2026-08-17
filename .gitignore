@@ -17,6 +17,7 @@ editor/.config/github-copilot/
 # Claude Code（下記の許可リスト以外は追跡しない）
 .claude/*
 !.claude/skills/
+!.claude/hooks/
 !.claude/settings.json
 !.claude/statusline-usage.sh
 !.claude/CLAUDE.md
