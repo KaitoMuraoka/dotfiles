@@ -52,5 +52,6 @@
   "tui": "fullscreen",
   "skipWorkflowUsageWarning": true,
   "theme": "auto",
+  "autoContinueAtUsageLimit": true,
   "agentPushNotifEnabled": true
 }
