@@ -76,7 +76,7 @@ alias allClean='git restore . && git restore --staged . && git clean -f .'
 alias act='act --container-architecture linux/amd64'
 
 # NeoVim Alias
-alias n='nvim'
+alias vim='nvim'
 alias nd='nvim ~/dotfiles/'
 alias nz='nvim ~/dotfiles/.zshrc && source ~/.zshrc'
 alias ng='nvim ~/dotfiles/.gitconfig && source ~/.gitconfig'
@@ -179,3 +179,4 @@ zstyle ':fzf-tab:complete:git-switch:*' disabled-on none
 
 # gh の新しい表示利用
 export GH_EXPERIMENTAL_PROMPTER=1
+export GITHUB_TOKEN="$(gh auth token)"
