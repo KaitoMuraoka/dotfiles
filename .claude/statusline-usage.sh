@@ -1,0 +1,75 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+CACHE_DIR="$HOME/.config/claude-usage-bar"
+CACHE="$CACHE_DIR/statusline-cache.json"
+TTL=300
+mkdir -p "$CACHE_DIR"
+
+STDIN=$(cat)
+MODEL=$(printf '%s' "$STDIN" | jq -r '.model.display_name // .model.id // empty' 2>/dev/null)
+CTX_PCT=$(printf '%s' "$STDIN" | jq -r '.context_window.used_percentage // empty' 2>/dev/null)
+if [ -n "$CTX_PCT" ]; then
+  CTX_PCT_INT=${CTX_PCT%.*}
+  CTX_PCT=$(printf '%.1f' "$CTX_PCT")
+fi
+
+fetch_usage() {
+  local token
+  token=$(security find-generic-password -s "Claude Code-credentials" -w 2>/dev/null \
+            | jq -r '.claudeAiOauth.accessToken' 2>/dev/null) || return
+  [ -n "$token" ] && [ "$token" != "null" ] || return
+  curl -sS --max-time 8 \
+    -H "Authorization: Bearer $token" \
+    -H "anthropic-beta: oauth-2025-04-20" \
+    https://api.anthropic.com/api/oauth/usage > "$CACHE.tmp" 2>/dev/null \
+    && mv "$CACHE.tmp" "$CACHE" || rm -f "$CACHE.tmp"
+}
+
+if [ ! -f "$CACHE" ] || [ "$(( $(date +%s) - $(stat -f %m "$CACHE") ))" -ge "$TTL" ]; then
+  fetch_usage &
+fi
+
+MODEL_LABEL=""
+[ -n "$MODEL" ] && MODEL_LABEL="\033[36m$MODEL\033[0m  "
+
+RESET="\033[0m"
+color() {  # $1=int percent -> ANSI color
+  if   [ "$1" -lt 50 ]; then printf '\033[32m'
+  elif [ "$1" -lt 80 ]; then printf '\033[33m'
+  else printf '\033[31m'
+  fi
+}
+
+CTX_LABEL=""
+[ -n "$CTX_PCT" ] && CTX_LABEL="$(color "$CTX_PCT_INT")ctx:${CTX_PCT}%${RESET}"
+
+if [ ! -f "$CACHE" ] || ! jq -e . "$CACHE" >/dev/null 2>&1; then
+  printf "%busage …" "$MODEL_LABEL"
+  [ -n "$CTX_LABEL" ] && printf "  %b" "$CTX_LABEL"
+  exit 0
+fi
+
+bar() {  # $1=int percent (0-100)
+  local p="$1" filled i out=""
+  (( p < 0 )) && p=0
+  (( p > 100 )) && p=100
+  filled=$(( (p + 10) / 20 ))
+  for ((i = 0; i < 5; i++)); do
+    if [ "$i" -lt "$filled" ]; then out+="▓"; else out+="░"; fi
+  done
+  printf '%s' "$out"
+}
+
+h5=$(jq -r '.five_hour.utilization // 0' "$CACHE")
+d7=$(jq -r '.seven_day.utilization // 0' "$CACHE")
+h5_int=${h5%.*}
+d7_int=${d7%.*}
+h5=$(printf '%.1f' "$h5")
+d7=$(printf '%.1f' "$d7")
+
+printf "%b5h %b%s %s%%%b  7d %b%s %s%%%b" \
+  "$MODEL_LABEL" \
+  "$(color "$h5_int")" "$(bar "$h5_int")" "$h5" "$RESET" \
+  "$(color "$d7_int")" "$(bar "$d7_int")" "$d7" "$RESET"
+[ -n "$CTX_LABEL" ] && printf "  %b" "$CTX_LABEL"

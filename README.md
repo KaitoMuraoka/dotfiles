@@ -70,4 +70,12 @@ ln -sf ~/dotfiles/.config/gh ~/.config/gh
 # Xcode
 mkdir -p ~/Library/Developer/Xcode/UserData/KeyBindings
 ln -sf ~/dotfiles/xcode/Library/Developer/Xcode/UserData/KeyBindings/MyCustomKeyboard.idekeybindings ~/Library/Developer/Xcode/UserData/KeyBindings/MyCustomKeyboard.idekeybindings
+
+# Claude Code
+ln -sf ~/dotfiles/.claude/CLAUDE.md ~/.claude/CLAUDE.md
+ln -sf ~/dotfiles/.claude/settings.json ~/.claude/settings.json
+ln -sf ~/dotfiles/.claude/statusline-usage.sh ~/.claude/statusline-usage.sh
+
+# AeroSpace
+ln -sf ~/dotfiles/.aerospace.toml ~/.aerospace.toml
 ```
