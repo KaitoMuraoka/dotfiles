@@ -36,7 +36,7 @@ plugins=(
 )
 
 # export EDITOR='nvim'
-export EDITOR='emacsclient'
+export EDITOR='emacsclient -c'
 
 source $ZSH/oh-my-zsh.sh
 
