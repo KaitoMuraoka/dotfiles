@@ -34,8 +34,8 @@ plugins=(
   fzf-tab
 )
 
-export EDITOR='nvim'
-alias vi='nvim'
+
+export EDITOR='emacsclient'
 
 source $ZSH/oh-my-zsh.sh
 
