@@ -35,7 +35,8 @@ plugins=(
     xcode
 )
 
-export EDITOR='nvim'
+# export EDITOR='nvim'
+export EDITOR='emacsclient'
 
 source $ZSH/oh-my-zsh.sh
 
