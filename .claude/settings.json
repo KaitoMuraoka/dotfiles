@@ -1,6 +1,6 @@
 {
   "env": {
-    "EDITOR": "nvim"
+    "EDITOR": "emacsclient -c"
   },
   "permissions": {
     "allow": [
