@@ -98,16 +98,11 @@ export PATH="$PATH:/Users/kaitomuraoka/.local/bin"
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 
 # eza alias
-alias ei="eza --icons --git"
-alias ea="eza -a --icons --git"
-alias ee="eza -aahl --icons --git"
-alias et="eza -T -L 3 -a -I 'node_modules|.git|.cache' --icons"
-alias eta="eza -T -a -I 'node_modules|.git|.cache' --color=always --icons | less -r"
-alias ls=ei
-alias la=ea
-alias ll=ee
-alias lt=et
-alias lta=eta
+alias ls="eza --icons --git"
+alias la="eza -a --icons --git"
+alias ll="eza -aahl --icons --git"
+alias lt="eza -T -L 3 -a -I 'node_modules|.git|.cache' --icons"
+alias lta="eza -T -a -I 'node_modules|.git|.cache' --color=always --icons | less -r"
 alias l="clear && ls"
 
 ## go
