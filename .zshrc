@@ -32,7 +32,6 @@ plugins=(
 	zsh-syntax-highlighting
 	web-search
   fzf-tab
-    xcode
 )
 
 export EDITOR='nvim'
