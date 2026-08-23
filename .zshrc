@@ -113,9 +113,9 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 
 # thefuck
-eval $(thefuck --abbr -S -q)
-# You can use whatever you want as an abbr -S -q, like for Mondays:
-eval $(thefuck --abbr -S -q FUCK)
+eval $(thefuck --alias)
+# You can use whatever you want as an alias, like for Mondays:
+eval $(thefuck --alias FUCK)
 
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 
