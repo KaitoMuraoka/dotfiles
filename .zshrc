@@ -58,46 +58,42 @@ chpwd(){
     eza --icons --git
 	fi
 }
-
-# ai agent alias
-alias big_brother="claude"
-
-# reload alias
-alias reload="exec zsh"
-
+source "$(brew --prefix zsh-abbr)/share/zsh-abbr/zsh-abbr.zsh" # zsh-abbr
+abbr -S -q big_brother="claude" # ai agent abbr -S -q
+abbr -S -q reload="exec zsh" # reload abbr -S -q
 # Aliases 
-alias c='clear'
+abbr -S -q c='clear'
 # Git
-alias gs='git status'
-alias gc='git config user.name;git config user.email'
-alias allClean='git restore . && git restore --staged . && git clean -f .'
+abbr -S -q gs='git status'
+abbr -S -q gc='git config user.name;git config user.email'
+abbr -S -q allClean='git restore . && git restore --staged . && git clean -f .'
 
 # act
-alias act='act --container-architecture linux/amd64'
+abbr -S -q act='act --container-architecture linux/amd64'
 
 # NeoVim Alias
-alias vim='nvim'
-alias nd='nvim ~/dotfiles/'
-alias nz='nvim ~/dotfiles/.zshrc && source ~/.zshrc'
-alias ng='nvim ~/dotfiles/.gitconfig && source ~/.gitconfig'
-alias nn='cd ~/.config/nvim && nvim .'
+abbr -S -q vim='nvim'
+abbr -S -q nd='nvim ~/dotfiles/'
+abbr -S -q nz='nvim ~/dotfiles/.zshrc && source ~/.zshrc'
+abbr -S -q ng='nvim ~/dotfiles/.gitconfig && source ~/.gitconfig'
+abbr -S -q nn='cd ~/.config/nvim && nvim .'
 
-alias pathcheck='echo $PATH'
+abbr -S -q pathcheck='echo $PATH'
 
-# freeze alias
-alias freeze='freeze --show-line-numbers --window'
+# freeze abbr -S -q
+abbr -S -q freeze='freeze --show-line-numbers --window'
 
 # 設定ファイル編集用（既存のものを整理）
-alias ez="e ~/.zshrc && source ~/.zshrc"
-alias ei="e ~/.emacs.d/init.el"
+abbr -S -q ez="e ~/.zshrc && source ~/.zshrc"
+abbr -S -q ei="e ~/.emacs.d/init.el"
 
 # Created by `pipx` on 2024-06-01 13:51:03
 export PATH="$PATH:/Users/kaitomuraoka/.local/bin"
 
-# emacs alias
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
+# emacs alias 
+abbr -S -q emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 
-# eza alias
+# eza 
 alias ls="eza --icons --git"
 alias la="eza -a --icons --git"
 alias ll="eza -aahl --icons --git"
@@ -117,9 +113,9 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 
 # thefuck
-eval $(thefuck --alias)
-# You can use whatever you want as an alias, like for Mondays:
-eval $(thefuck --alias FUCK)
+eval $(thefuck --abbr -S -q)
+# You can use whatever you want as an abbr -S -q, like for Mondays:
+eval $(thefuck --abbr -S -q FUCK)
 
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 
