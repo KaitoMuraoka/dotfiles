@@ -35,6 +35,7 @@ plugins=(
 )
 
 export EDITOR='nvim'
+alias vi='nvim'
 
 source $ZSH/oh-my-zsh.sh
 
