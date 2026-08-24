@@ -32,10 +32,10 @@ plugins=(
 	zsh-syntax-highlighting
 	web-search
   fzf-tab
-    xcode
 )
 
 export EDITOR='nvim'
+alias vi='nvim'
 
 source $ZSH/oh-my-zsh.sh
 
@@ -46,6 +46,7 @@ if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
     source /Users/kaito.muraoka/.emacs.d/straight/repos/emacs-libvterm/etc/emacs-vterm-zsh.sh
 fi
 
+# zsh の補完機能を読み込み、コマンド補完を有効にする設定
 if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
     autoload -Uz compinit
@@ -58,76 +59,51 @@ chpwd(){
     eza --icons --git
 	fi
 }
-
-# ai agent alias
-alias big_brother="claude"
-
-# reload alias
-alias reload="exec zsh"
-
+source "$(brew --prefix zsh-abbr)/share/zsh-abbr/zsh-abbr.zsh" # zsh-abbr
+abbr -S -q big_brother="claude" # ai agent abbr -S -q
+abbr -S -q reload="exec zsh" # reload abbr -S -q
 # Aliases 
-alias c='clear'
+abbr -S -q c='clear'
 # Git
-alias gs='git status'
-alias gc='git config user.name;git config user.email'
-alias allClean='git restore . && git restore --staged . && git clean -f .'
+abbr -S -q gs='git status'
+abbr -S -q gc='git config user.name;git config user.email'
+abbr -S -q allClean='git restore . && git restore --staged . && git clean -f .'
 
 # act
-alias act='act --container-architecture linux/amd64'
+abbr -S -q act='act --container-architecture linux/amd64'
 
 # NeoVim Alias
-alias vim='nvim'
-alias nd='nvim ~/dotfiles/'
-alias nz='nvim ~/dotfiles/.zshrc && source ~/.zshrc'
-alias ng='nvim ~/dotfiles/.gitconfig && source ~/.gitconfig'
-alias nn='cd ~/.config/nvim && nvim .'
+abbr -S -q vim='nvim'
+abbr -S -q nd='nvim ~/dotfiles/'
+abbr -S -q nz='nvim ~/dotfiles/.zshrc && source ~/.zshrc'
+abbr -S -q ng='nvim ~/dotfiles/.gitconfig && source ~/.gitconfig'
+abbr -S -q nn='cd ~/.config/nvim && nvim .'
 
-alias pathcheck='echo $PATH'
+abbr -S -q pathcheck='echo $PATH'
 
-# freeze alias
-alias freeze='freeze --show-line-numbers --window'
+# freeze abbr -S -q
+abbr -S -q freeze='freeze --show-line-numbers --window'
 
 # 設定ファイル編集用（既存のものを整理）
-alias ez="e ~/.zshrc && source ~/.zshrc"
-alias ei="e ~/.emacs.d/init.el"
+abbr -S -q ez="e ~/.zshrc && source ~/.zshrc"
+abbr -S -q ei="e ~/.emacs.d/init.el"
 
 # Created by `pipx` on 2024-06-01 13:51:03
 export PATH="$PATH:/Users/kaitomuraoka/.local/bin"
 
-# emacs alias
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
+# emacs alias 
+abbr -S -q emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 
-# eza alias
-alias ei="eza --icons --git"
-alias ea="eza -a --icons --git"
-alias ee="eza -aahl --icons --git"
-alias et="eza -T -L 3 -a -I 'node_modules|.git|.cache' --icons"
-alias eta="eza -T -a -I 'node_modules|.git|.cache' --color=always --icons | less -r"
-alias ls=ei
-alias la=ea
-alias ll=ee
-alias lt=et
-alias lta=eta
+# eza 
+alias ls="eza --icons --git"
+alias la="eza -a --icons --git"
+alias ll="eza -aahl --icons --git"
+alias lt="eza -T -L 3 -a -I 'node_modules|.git|.cache' --icons"
+alias lta="eza -T -a -I 'node_modules|.git|.cache' --color=always --icons | less -r"
 alias l="clear && ls"
-
-# open ticktick gui
-alias ticktick="open /Applications/TickTick.app"
-
-## [Completion]
-## Completion scripts setup. Remove the following line to uninstall
-[[ -f /Users/kaitomuraoka/.dart-cli-completion/zsh-config.zsh ]] && . /Users/kaitomuraoka/.dart-cli-completion/zsh-config.zsh || true
-## [/Completion]
-
-# Android / Java
-export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
-export PATH="$JAVA_HOME/bin:$PATH"
 
 ## go
 export PATH="$PATH:$(go env GOPATH)/bin"
-
-## node nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-eval "$(rbenv init -)" # bash の場合は /Users/kaito/.bash_profile
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -138,13 +114,10 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 
 # thefuck
-# https://github.com/nvbn/thefuck
 eval $(thefuck --alias)
 # You can use whatever you want as an alias, like for Mondays:
 eval $(thefuck --alias FUCK)
 
-# alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
-# export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 
 # Ctrl+j で中断ジョブを一覧から fzf で選んで fg する
