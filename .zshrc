@@ -142,7 +142,7 @@ fi
 
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
-
+eval "$(rbenv init - zsh)"
 # デフォルトでは全コマンドに対してfzf-tabを無効化
 zstyle ':fzf-tab:*' disabled-on any
 
