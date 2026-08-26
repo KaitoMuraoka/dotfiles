@@ -1,6 +1,7 @@
 {
   "env": {
-    "EDITOR": "nvim"
+    "EDITOR": "nvim",
+    "CLAUDE_CODE_DISABLE_MOUSE_CLICKS": "1"
   },
   "permissions": {
     "allow": [
