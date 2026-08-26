@@ -92,6 +92,8 @@ export PATH="$PATH:/Users/kaitomuraoka/.local/bin"
 
 # emacs alias 
 abbr -S -q emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
+alias E="emacsclient"
+alias emacs-kill="emacsclient -e '(kill-emacs)'"
 
 # eza 
 alias ls="eza --icons --git"
