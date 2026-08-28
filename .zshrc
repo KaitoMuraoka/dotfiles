@@ -34,8 +34,7 @@ plugins=(
   fzf-tab
 )
 
-export EDITOR='nvim'
-alias vi='nvim'
+export EDITOR='emacsclient -c'
 
 source $ZSH/oh-my-zsh.sh
 
@@ -93,6 +92,8 @@ export PATH="$PATH:/Users/kaitomuraoka/.local/bin"
 
 # emacs alias 
 abbr -S -q emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
+alias E="emacsclient"
+alias emacs-kill="emacsclient -e '(kill-emacs)'"
 
 # eza 
 alias ls="eza --icons --git"
