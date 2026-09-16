@@ -1,6 +1,6 @@
 {
   "env": {
-    "EDITOR": "emacsclient -c",
+    "EDITOR": "nvim",
     "CLAUDE_CODE_DISABLE_MOUSE_CLICKS": "1"
   },
   "permissions": {
@@ -48,6 +48,17 @@
     "type": "command",
     "command": "~/.claude/statusline-usage.sh",
     "padding": 0
+  },
+  "enabledPlugins": {
+    "ponytail@ponytail": true
+  },
+  "extraKnownMarketplaces": {
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      }
+    }
   },
   "effortLevel": "medium",
   "tui": "fullscreen",
