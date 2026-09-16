@@ -1,6 +1,6 @@
 {
   "env": {
-    "EDITOR": "nvim",
+    "EDITOR": "/Users/kaito.muraoka/dotfiles/bin/herdr-nvim",
     "CLAUDE_CODE_DISABLE_MOUSE_CLICKS": "1"
   },
   "permissions": {
