@@ -133,6 +133,7 @@ bindkey '\ej' fzf-fg
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/Applications/Emacs.app/Contents/MacOS/bin:$PATH"
+export PATH="$HOME/dotfiles/bin:$PATH"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/kaito.muraoka/.rd/bin:$PATH"
