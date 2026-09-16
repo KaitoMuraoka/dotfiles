@@ -1,0 +1,4 @@
+#!/bin/sh
+herdr pane zoom --current --on 2>/dev/null
+nvim "$@"
+herdr pane zoom --current --off 2>/dev/null
