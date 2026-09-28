@@ -31,3 +31,4 @@ editor/.config/github-copilot/
 .config/herdr/release-notes.json
 .config/hunk/state.json
 .config/qiita-cli/
+.config/opencode/
