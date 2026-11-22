@@ -33,3 +33,4 @@ editor/.config/github-copilot/
 .config/qiita-cli/
 
 build/*
+.entangled/
