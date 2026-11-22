@@ -73,11 +73,11 @@ ZSH_TMUX_AUTOSTART_ONCE=false
 ZSH_TMUX_AUTOCONNECT=false
 
 plugins=(
-	git
-	zsh-autosuggestions
-	zsh-syntax-highlighting
-	web-search
-    fzf-tab
+    git
+    web-search 
+    fzf-tab 
+    zsh-autosuggestions 
+    zsh-syntax-highlighting
 )
 ```
 
@@ -103,7 +103,7 @@ Emacs の vterm 内で起動したときだけ、vterm 用の連携スクリプ�
 
 ``` {.zsh #emacs-vterm}
 if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
-    source /Users/kaito.muraoka/.emacs.d/straight/repos/emacs-libvterm/etc/emacs-vterm-zsh.sh
+    source $HOME/.emacs.d/straight/repos/emacs-libvterm/etc/emacs-vterm-zsh.sh
 fi
 ```
 
@@ -218,7 +218,7 @@ pipx が入れたコマンドの置き場所を PATH の末尾に追加する。
 
 ``` {.zsh #path-pipx}
 # Created by `pipx` on 2024-06-01 13:51:03
-export PATH="$PATH:/Users/kaitomuraoka/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 ```
 
 ## PATH: Go と RVM
@@ -301,7 +301,7 @@ Rancher Desktop が自動で追記する PATH 設定。マーカーの間は Ran
 
 ``` {.zsh #rancher-desktop}
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/kaito.muraoka/.rd/bin:$PATH"
+export PATH="$HOME/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 ```
 
