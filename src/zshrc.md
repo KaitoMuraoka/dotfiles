@@ -1,3 +1,6 @@
+# zshrc
+
+``` {.zsh file=build/zshrc}
 export ZSH="$HOME/.oh-my-zsh"
 # ZSH_THEME="robbyrussell"
 
@@ -155,3 +158,4 @@ zstyle ':fzf-tab:complete:git-switch:*' disabled-on none
 # gh の新しい表示利用
 export GH_EXPERIMENTAL_PROMPTER=1
 export GITHUB_TOKEN="$(gh auth token)"
+```
