@@ -93,28 +93,92 @@ diff の表示を見やすくする delta をページャーに使う。`n` / `N
 
 ## alias
 
-よく使う操作の短縮形。マージ済み・リモートで消えたブランチの掃除、fzf でのブランチ切り替え、PR レビュー用のチェックアウト、Claude によるコミットメッセージ生成（`--detail` で本文付き）などをまとめている。
+よく使う操作の短縮形。親ブロックでは `[alias]` の下に各エイリアスを並べる。
 
 ``` {.zsh #alias}
 [alias]
-  rebase-branch = "rebase -i $(git merge-base HEAD main)"
-  emptycommit = "commit --allow-empty -m "空コミット""
-  logo = "log --oneline"
-  delete-merged-branch = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|main'|xargs git branch -d; };f"
-  copy-branch = "!f() { git branch --show-current | tr -d '\n' | pbcopy; echo 'Current branch name copied to clipboard.'; }; f"
-  pull-fetch = "!f() { git pull $1 $2 && git fetch $1 && git delete-merged-branch; }; f"
-  review = "!f() { git checkout -b \"$1\" \"origin/$1\"; }; f \"$@\""
-  delete-remote-branch = "!git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D"
-  cof = !git branch -a | fzf | xargs git checkout
-  aicommit = "!f() { \
-  if [ \"$1\" = \"--detail\" ]; then \
-    COMMITMSG=$(claude --no-session-persistence --print 'Generate a Git commit message in Japanese based strictly on the contents of `git diff --cached`. Format it as follows: First line: a concise one-line summary. Then a blank line. Then a detailed bullet-point list explaining what was changed and why. Output ONLY the commit message, no extra explanation.'); \
-  else \
-    COMMITMSG=$(claude --no-session-persistence --print 'Generate ONLY a one-line Git commit message in Japanese. The message should summarize what was changed and why, based strictly on the contents of `git diff --cached`. DO NOT add an explanation or a body. Output ONLY the commit summary line.'); \
-  fi; \
-  git commit -m \"$COMMITMSG\" -e; \
-}; f"
+<<alias-rebase-branch>>
+<<alias-emptycommit>>
+<<alias-logo>>
+<<alias-delete-merged-branch>>
+<<alias-copy-branch>>
+<<alias-pull-fetch>>
+<<alias-review>>
+<<alias-delete-remote-branch>>
+<<alias-cof>>
 
+```
+
+### rebase-branch
+
+main から分岐した時点以降のコミットを対話的リベースで整理する。PR を出す前にコミットをまとめ直すときに使う。
+
+``` {.zsh #alias-rebase-branch}
+  rebase-branch = "rebase -i $(git merge-base HEAD main)"
+```
+
+### emptycommit
+
+「空コミット」というメッセージで、変更のないコミットを作る。ブランチの起点作りや CI の再実行、空のPR作成に使う。
+
+``` {.zsh #alias-emptycommit}
+  emptycommit = "commit --allow-empty -m "空コミット""
+```
+
+### logo
+
+コミット履歴を 1 行ずつ簡潔に表示する。
+
+``` {.zsh #alias-logo}
+  logo = "log --oneline"
+```
+
+### delete-merged-branch
+
+引数のブランチに切り替え、そこへマージ済みのローカルブランチを削除する。現在のブランチと develop・dev・main は消さない。
+
+``` {.zsh #alias-delete-merged-branch}
+  delete-merged-branch = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|dev|main'|xargs git branch -d; };f"
+```
+
+### copy-branch
+
+現在のブランチ名を改行なしでクリップボードにコピーする。macOS の pbcopy を使う。
+
+``` {.zsh #alias-copy-branch}
+  copy-branch = "!f() { git branch --show-current | tr -d '\n' | pbcopy; echo 'Current branch name copied to clipboard.'; }; f"
+```
+
+### pull-fetch
+
+`git pull <remote> <branch>` と fetch を行った後、`delete-merged-branch` でマージ済みブランチを掃除する。
+
+``` {.zsh #alias-pull-fetch}
+  pull-fetch = "!f() { git pull $1 $2 && git fetch $1 && git delete-merged-branch; }; f"
+```
+
+### review
+
+`origin/<ブランチ名>` を追跡するローカルブランチを作って切り替える。PR のレビューでブランチを手元に持ってくるときに使う。
+
+``` {.zsh #alias-review}
+  review = "!f() { git checkout -b \"$1\" \"origin/$1\"; }; f \"$@\""
+```
+
+### delete-remote-branch
+
+fetch でリモートの削除を反映し、追跡先のリモートブランチが消えたローカルブランチを強制削除する。
+
+``` {.zsh #alias-delete-remote-branch}
+  delete-remote-branch = "!git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D"
+```
+
+### cof
+
+リモートを含む全ブランチを fzf で選び、そのブランチに切り替える。
+
+``` {.zsh #alias-cof}
+  cof = !git branch -a | fzf | xargs git checkout
 ```
 
 ## 初期ブランチ
