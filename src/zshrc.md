@@ -127,7 +127,7 @@ fi
 
 ``` {.zsh #chpwd}
 chpwd(){
-	if [[ $(pwd) != $HOME ]]; then;
+	if [[ -z $CLAUDECODE && $(pwd) != $HOME ]]; then;
     eza --icons --git
 	fi
 }
