@@ -77,3 +77,12 @@ ln -sf ~/dotfiles/.claude/statusline-usage.sh ~/.claude/statusline-usage.sh
 # AeroSpace
 ln -sf ~/dotfiles/.aerospace.toml ~/.aerospace.toml
 ```
+
+### 6. Claude Code スキルのインストール
+
+`.claude/CLAUDE.md` は、日本語の文章を出力するときに [yomiyasu](https://github.com/nanaism/yomiyasu) スキルで推敲するよう指示しています。
+スキルが入っていなければこの指示は無視されます。
+
+```sh
+npx skills add nanaism/yomiyasu
+```
