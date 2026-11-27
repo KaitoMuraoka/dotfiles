@@ -1,0 +1,7 @@
+version = "2.0"
+watch_list = ["src/**/*.md"]
+
+[[languages]]
+name = "Zsh"
+identifiers = ["zsh"]
+comment = { open = "#" }

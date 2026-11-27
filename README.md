@@ -52,15 +52,14 @@ gh extension install seachicken/gh-poi
 
 ```sh
 # Shell
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -sfn ~/dotfiles/build/zshrc ~/.zshrc
 ln -sf ~/dotfiles/.zshrc.local ~/.zshrc.local
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/.ideavimrc ~/.ideavimrc
 
 # Git
-ln -sf ~/dotfiles/git/.gitconfig ~/.gitconfig
-ln -sf ~/dotfiles/git/.gitmessage_reviewfix.txt ~/.gitmessage_reviewfix.txt
+ln -sfn ~/dotfiles/build/gitconfig ~/.gitconfig
 
 # Config
 mkdir -p ~/.config
@@ -73,7 +72,6 @@ ln -sf ~/dotfiles/xcode/Library/Developer/Xcode/UserData/KeyBindings/MyCustomKey
 
 # Claude Code
 ln -sf ~/dotfiles/.claude/CLAUDE.md ~/.claude/CLAUDE.md
-ln -sf ~/dotfiles/.claude/settings.json ~/.claude/settings.json
 ln -sf ~/dotfiles/.claude/statusline-usage.sh ~/.claude/statusline-usage.sh
 
 # AeroSpace

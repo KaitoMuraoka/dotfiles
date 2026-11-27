@@ -16,10 +16,10 @@ fi
 
 fetch_usage() {
   local token
-  token=$(security find-generic-password -s "Claude Code-credentials" -w 2>/dev/null \
+  token=$(security find-generic-password -a "$USER" -s "Claude Code-credentials" -w 2>/dev/null \
             | jq -r '.claudeAiOauth.accessToken' 2>/dev/null) || return
   [ -n "$token" ] && [ "$token" != "null" ] || return
-  curl -sS --max-time 8 \
+  curl -fsS --max-time 8 \
     -H "Authorization: Bearer $token" \
     -H "anthropic-beta: oauth-2025-04-20" \
     https://api.anthropic.com/api/oauth/usage > "$CACHE.tmp" 2>/dev/null \
