@@ -72,6 +72,7 @@ ln -sf ~/dotfiles/xcode/Library/Developer/Xcode/UserData/KeyBindings/MyCustomKey
 
 # Claude Code
 ln -sf ~/dotfiles/.claude/CLAUDE.md ~/.claude/CLAUDE.md
+ln -sf ~/dotfiles/.claude/statusline-usage.sh ~/.claude/statusline-usage.sh
 
 # AeroSpace
 ln -sf ~/dotfiles/.aerospace.toml ~/.aerospace.toml

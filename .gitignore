@@ -14,9 +14,10 @@ editor/.config/github-copilot/
 .config/nvim/
 .config/ghostty/
 
-# Claude Code（CLAUDE.md 以外は追跡しない）
+# Claude Code（下記の許可リスト以外は追跡しない）
 .claude/*
 !.claude/CLAUDE.md
+!.claude/statusline-usage.sh
 
 .config/herdr/session.json
 .config/claude-usage-bar
